@@ -1,0 +1,319 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-010",
+      "name": "2-Phenylethyl Acetate",
+      "cas": "103-45-7",
+      "category": "Floral",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Phenethyl Alcohol Acetylation",
+          "temp": "20-40C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Phenethyl alcohol",
+            "Acetic anhydride",
+            "Pyridine"
+          ],
+          "yield": "92%",
+          "time": "2h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Acetic Acid Esterification",
+          "temp": "60C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Phenethyl alcohol",
+            "Acetic acid",
+            "H2SO4"
+          ],
+          "yield": "88%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-011",
+      "name": "Rose Oxide",
+      "cas": "16409-43-1",
+      "category": "Floral",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Geraniol Cyclization",
+          "temp": "60-80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Geraniol",
+            "P2O5",
+            "Toluene"
+          ],
+          "yield": "78%",
+          "time": "5h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Acid-catalyzed",
+          "temp": "70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Geraniol",
+            "H2SO4"
+          ],
+          "yield": "75%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-017",
+      "name": "Isoamyl Acetate",
+      "cas": "123-92-2",
+      "category": "Fruity",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Direct Esterification",
+          "temp": "70-90C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Isoamyl alcohol",
+            "Acetic acid",
+            "H2SO4"
+          ],
+          "yield": "90%",
+          "time": "4h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Acetyl Chloride Route",
+          "temp": "20C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Isoamyl alcohol",
+            "Acetyl chloride"
+          ],
+          "yield": "94%",
+          "time": "1h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-018",
+      "name": "Ethyl Isobutyrate",
+      "cas": "97-62-1",
+      "category": "Fruity",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Esterification",
+          "temp": "70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Isobutyric acid",
+            "H2SO4"
+          ],
+          "yield": "91%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Isobutyryl Chloride",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Isobutyryl chloride"
+          ],
+          "yield": "95%",
+          "time": "1h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-020",
+      "name": "Benzyl Acetate",
+      "cas": "140-11-4",
+      "category": "Fruity",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Benzyl Alcohol Acetylation",
+          "temp": "50-70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Benzyl alcohol",
+            "Acetic acid",
+            "H2SO4"
+          ],
+          "yield": "89%",
+          "time": "4h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Anhydride Route",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Benzyl alcohol",
+            "Acetic anhydride"
+          ],
+          "yield": "93%",
+          "time": "2h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-026",
+      "name": "Cedarwood",
+      "cas": "Cedrol",
+      "category": "Woody",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Cedar Oil Extraction",
+          "temp": "60-100C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Cedar wood",
+            "Steam distillation"
+          ],
+          "yield": "8-12%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Chromatographic Isolation",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Cedar oil",
+            "Silica gel"
+          ],
+          "yield": "40%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-027",
+      "name": "Sandalwood",
+      "cas": "Santalol",
+      "category": "Woody",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Sandalwood Oil Extraction",
+          "temp": "80-120C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Sandalwood",
+            "Steam distillation"
+          ],
+          "yield": "5-8%",
+          "time": "4h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Santalol Synthesis",
+          "temp": "100C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Precursor",
+            "Multiple steps"
+          ],
+          "yield": "55%",
+          "time": "8h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-037",
+      "name": "Limonene",
+      "cas": "138-86-3",
+      "category": "Green",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Citrus Oil Extraction",
+          "temp": "40-60C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Orange peel",
+            "Cold pressing"
+          ],
+          "yield": "1-2%",
+          "time": "2h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Chemical Synthesis",
+          "temp": "120C",
+          "pressure": "3 atm",
+          "reagents": [
+            "Isoprene",
+            "Acetone",
+            "Catalyst"
+          ],
+          "yield": "70%",
+          "time": "6h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-038",
+      "name": "Pinene",
+      "cas": "80-56-8",
+      "category": "Green",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Pine Oil Extraction",
+          "temp": "50-80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Pine resin",
+            "Steam distillation"
+          ],
+          "yield": "3-5%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Terpene Synthesis",
+          "temp": "100C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Turpentine",
+            "Isomerization"
+          ],
+          "yield": "65%",
+          "time": "5h",
+          "cost_per_kg": ""
+        }
+      ]
+    }
+  ],
+  "total": 9,
+  "part": "Part 2: Floral, Fruity, Woody, Green"
+}
