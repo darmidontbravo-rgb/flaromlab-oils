@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Filter, Droplet, Zap, DollarSign, Beaker, Atom } from 'lucide-react';
+import { Search, Filter, Droplet, Zap, DollarSign, Beaker, Atom, Lightbulb } from 'lucide-react';
 import SearchComponent from './components/Search';
 import OilCard from './components/OilCard';
 import ComparisonView from './components/ComparisonView';
 import FilterPanel from './components/FilterPanel';
 import FormulasPage from './components/FormulasPage';
 import MoleculesPage from './components/MoleculesPage';
+import FormulaBuilder from './components/FormulaBuilder';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('oils');
@@ -125,6 +126,17 @@ export default function App() {
               <Atom className="w-4 h-4" />
               Molecules (150+)
             </button>
+            <button
+              onClick={() => setActiveTab('builder')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'builder'
+                  ? 'bg-white text-blue-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <Lightbulb className="w-4 h-4" />
+              Formula Builder
+            </button>
           </div>
         </div>
       </header>
@@ -208,9 +220,12 @@ export default function App() {
         ) : activeTab === 'formulas' ? (
           // FORMULAS TAB
           <FormulasPage />
-        ) : (
+        ) : activeTab === 'molecules' ? (
           // MOLECULES TAB
           <MoleculesPage />
+        ) : (
+          // FORMULA BUILDER TAB
+          <FormulaBuilder />
         )}
       </main>
 
