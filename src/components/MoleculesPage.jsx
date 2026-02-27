@@ -11,20 +11,17 @@ export default function MoleculesPage() {
   useEffect(() => {
     const loadMolecules = async () => {
       try {
-        const part1 = await fetch('/data/molecules_part1.json').then(r => r.json());
-        const part2 = await fetch('/data/molecules_part2.json').then(r => r.json());
-        const part3 = await fetch('/data/molecules_part3.json').then(r => r.json());
-        const part4 = await fetch('/data/molecules_part4.json').then(r => r.json());
-        const part5 = await fetch('/data/molecules_part5.json').then(r => r.json());
+        const parts = await Promise.all([
+          fetch('/data/molecules_part1.json').then(r => r.json()),
+          fetch('/data/molecules_part2.json').then(r => r.json()),
+          fetch('/data/molecules_part3.json').then(r => r.json()),
+          fetch('/data/molecules_part4_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
+          fetch('/data/molecules_part5_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
+          fetch('/data/molecules_part6_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
+          fetch('/data/molecules_part7_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
+        ]);
         
-        const allMolecules = [
-          ...part1.molecules,
-          ...part2.molecules,
-          ...part3.molecules,
-          ...part4.molecules,
-          ...part5.molecules
-        ];
-        
+        const allMolecules = parts.flatMap(part => part.molecules);
         setMolecules(allMolecules);
         setLoading(false);
       } catch (error) {
@@ -148,24 +145,58 @@ export default function MoleculesPage() {
                   {/* Expanded Details */}
                   {expandedMolecule === mol.id && (
                     <div className="bg-purple-50 p-4 border-t space-y-3 text-sm">
+                      {mol.description && (
+                        <div className="mb-4 p-3 bg-white rounded border-l-2 border-purple-400">
+                          <div className="font-semibold text-gray-700 mb-2">Description</div>
+                          <div className="text-gray-600 text-xs leading-relaxed">{mol.description}</div>
+                        </div>
+                      )}
+                      
+                      {mol.organoleptic && (
+                        <div className="flex justify-between">
+                          <span className="font-semibold text-gray-700">Organoleptic:</span>
+                          <span className="text-gray-600 text-right">{mol.organoleptic}</span>
+                        </div>
+                      )}
+                      
                       {mol.odor && (
                         <div className="flex justify-between">
                           <span className="font-semibold text-gray-700">Odor:</span>
                           <span className="text-gray-600">{mol.odor}</span>
                         </div>
                       )}
-                      {mol.synthesis && (
+                      
+                      {mol.shelf_life && (
                         <div className="flex justify-between">
-                          <span className="font-semibold text-gray-700">Synthesis:</span>
-                          <span className="text-gray-600 text-right">{mol.synthesis}</span>
+                          <span className="font-semibold text-gray-700">Shelf Life:</span>
+                          <span className="text-gray-600">{mol.shelf_life}</span>
                         </div>
                       )}
-                      {mol.fema_gras && (
-                        <div className="flex justify-between">
-                          <span className="font-semibold text-gray-700">FEMA GRAS:</span>
-                          <span className={mol.fema_gras === 'Yes' ? 'text-green-600 font-semibold' : 'text-orange-600'}>{mol.fema_gras}</span>
+                      
+                      {mol.regulatory && (
+                        <div className="pt-2 border-t">
+                          <span className="font-semibold text-gray-700">Regulatory:</span>
+                          <div className="flex flex-wrap gap-2 mt-2">
+                            {mol.regulatory.fema_gras && <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">FEMA: {mol.regulatory.fema_gras}</span>}
+                            {mol.regulatory.eu_approved && <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">EU: {mol.regulatory.eu_approved}</span>}
+                            {mol.regulatory.prop_65 && <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Prop 65: {mol.regulatory.prop_65}</span>}
+                          </div>
                         </div>
                       )}
+                      
+                      {mol.compatibility && (
+                        <div className="pt-2 border-t">
+                          <span className="font-semibold text-gray-700">Compatible with:</span>
+                          <div className="flex flex-wrap gap-2 mt-2">
+                            {mol.compatibility.map((c, i) => (
+                              <span key={i} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">
+                                {c}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      
                       {mol.suppliers && (
                         <div>
                           <span className="font-semibold text-gray-700">Suppliers:</span>
