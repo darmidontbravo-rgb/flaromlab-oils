@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "total_molecules": 28,
+    "version": "1.0",
+    "created": "2026-02-27",
+    "description": "Synthesis routes and guides for 95+ molecules in perfumery and flavoring"
+  },
+  "parts": [
+    {
+      "part": 1,
+      "file": "synthesis_part1.json",
+      "molecules": 10,
+      "categories": [
+        "Spicy",
+        "Floral",
+        "Fruity",
+        "Woody",
+        "Musky",
+        "Cocoa"
+      ],
+      "examples": "Vanillin, Ethyl Vanillin, Coumarin, Geraniol, Ethyl Butyrate, Caryophyllene, Galaxolide, 2-Methylpyrazine"
+    },
+    {
+      "part": 2,
+      "file": "synthesis_part2.json",
+      "molecules": 10,
+      "categories": [
+        "Floral",
+        "Fruity",
+        "Woody",
+        "Green"
+      ],
+      "examples": "2-Phenylethyl Acetate, Rose Oxide, Isoamyl Acetate, Benzyl Acetate, Cedarwood, Sandalwood, Limonene, Pinene"
+    },
+    {
+      "part": 3,
+      "file": "synthesis_part3.json",
+      "molecules": 8,
+      "categories": [
+        "Fruity",
+        "Floral",
+        "Green",
+        "Aldehyde",
+        "Woody",
+        "Animalic"
+      ],
+      "examples": "Ethyl Formate, Linalyl Acetate, Myrcene, Undecanal, Decanal, Cedrol, Skatole"
+    }
+  ],
+  "synthesis_data_structure": {
+    "id": "MOL-001",
+    "name": "Vanillin",
+    "cas": "121-33-5",
+    "category": "Spicy",
+    "methods": [
+      {
+        "method": 1,
+        "name": "Route name",
+        "temp": "80-120C",
+        "pressure": "1-5 atm",
+        "reagents": [
+          "Reagent 1",
+          "Reagent 2"
+        ],
+        "yield": "75-85%",
+        "time": "4-6h",
+        "cost_per_kg": "USD price"
+      }
+    ]
+  },
+  "next_phase": "Add 67+ more molecules in synthesis_part4, part5, etc. Expand to cover all 95+ molecules from molecules database"
+}
