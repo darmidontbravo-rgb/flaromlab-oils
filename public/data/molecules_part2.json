@@ -4,6 +4,7 @@
       "id": "MOL-026",
       "name": "Cedarwood",
       "cas": "Cedrol",
+      "inci": "Cedrol",
       "category": "Woody",
       "odor": "Woody cedar"
     },
@@ -11,6 +12,7 @@
       "id": "MOL-027",
       "name": "Sandalwood",
       "cas": "Santalol",
+      "inci": "Santalol",
       "category": "Woody",
       "odor": "Woody sandalwood"
     },
@@ -18,6 +20,7 @@
       "id": "MOL-028",
       "name": "Vetiver",
       "cas": "Vetiverol",
+      "inci": "Vetiverol",
       "category": "Woody",
       "odor": "Earthy woody"
     },
@@ -25,6 +28,7 @@
       "id": "MOL-029",
       "name": "Guaiacol",
       "cas": "90-05-1",
+      "inci": "Guaiacol",
       "category": "Woody",
       "odor": "Smoky woody"
     },
@@ -32,6 +36,7 @@
       "id": "MOL-030",
       "name": "Isoeugenol",
       "cas": "97-54-1",
+      "inci": "Isoeugenol",
       "category": "Woody",
       "odor": "Warm woody"
     },
@@ -39,6 +44,7 @@
       "id": "MOL-031",
       "name": "Iso E Super",
       "cas": "54144-13-3",
+      "inci": "Iso E Super",
       "category": "Woody",
       "odor": "Woody mineral"
     },
@@ -46,6 +52,7 @@
       "id": "MOL-032",
       "name": "Galaxolide",
       "cas": "1222-05-5",
+      "inci": "Galaxolide",
       "category": "Musky",
       "odor": "Soft musky"
     },
@@ -53,6 +60,7 @@
       "id": "MOL-033",
       "name": "HHCB",
       "cas": "38700-29-7",
+      "inci": "HHCB",
       "category": "Musky",
       "odor": "Musky"
     },
@@ -60,6 +68,7 @@
       "id": "MOL-034",
       "name": "AHTN",
       "cas": "25154-52-3",
+      "inci": "AHTN",
       "category": "Musky",
       "odor": "Musky"
     },
@@ -67,6 +76,7 @@
       "id": "MOL-035",
       "name": "Hexanal",
       "cas": "66-25-1",
+      "inci": "Hexanal",
       "category": "Green",
       "odor": "Fresh green"
     },
@@ -74,6 +84,7 @@
       "id": "MOL-036",
       "name": "Octanal",
       "cas": "124-13-0",
+      "inci": "Octanal",
       "category": "Green",
       "odor": "Fresh citrus"
     },
@@ -81,6 +92,7 @@
       "id": "MOL-037",
       "name": "Limonene",
       "cas": "138-86-3",
+      "inci": "Limonene",
       "category": "Green",
       "odor": "Lemon citrus"
     },
@@ -88,6 +100,7 @@
       "id": "MOL-038",
       "name": "Pinene",
       "cas": "80-56-8",
+      "inci": "Pinene",
       "category": "Green",
       "odor": "Pine fresh"
     },
@@ -95,6 +108,7 @@
       "id": "MOL-039",
       "name": "Cis-3-Hexenol",
       "cas": "928-96-1",
+      "inci": "Cis-3-Hexenol",
       "category": "Green",
       "odor": "Grass green"
     },
@@ -102,9 +116,90 @@
       "id": "MOL-040",
       "name": "Cis-3-Hexenyl Acetate",
       "cas": "3681-71-8",
+      "inci": "Cis-3-Hexenyl Acetate",
       "category": "Green",
       "odor": "Grassy fruity"
+    },
+    {
+      "id": "MOL-041",
+      "name": "2-Methylpyrazine",
+      "cas": "109-08-0",
+      "inci": "2-Methylpyrazine",
+      "category": "Cocoa",
+      "odor": "Roasted cocoa"
+    },
+    {
+      "id": "MOL-042",
+      "name": "Furfural",
+      "cas": "98-01-1",
+      "inci": "Furfural",
+      "category": "Cocoa",
+      "odor": "Roasted bread"
+    },
+    {
+      "id": "MOL-043",
+      "name": "3-Methylbutanal",
+      "cas": "590-86-3",
+      "inci": "3-Methylbutanal",
+      "category": "Cocoa",
+      "odor": "Fruity malty"
+    },
+    {
+      "id": "MOL-044",
+      "name": "Acetoin",
+      "cas": "513-86-0",
+      "inci": "Acetoin",
+      "category": "Cocoa",
+      "odor": "Buttery creamy"
+    },
+    {
+      "id": "MOL-045",
+      "name": "Maltol",
+      "cas": "118-02-5",
+      "inci": "Maltol",
+      "category": "Cocoa",
+      "odor": "Caramel sweet"
+    },
+    {
+      "id": "MOL-046",
+      "name": "Ethyl Maltol",
+      "cas": "4940-11-8",
+      "inci": "Ethyl Maltol",
+      "category": "Cocoa",
+      "odor": "Caramel sweet"
+    },
+    {
+      "id": "MOL-047",
+      "name": "Phenylacetaldehyde",
+      "cas": "104-53-0",
+      "inci": "Phenylacetaldehyde",
+      "category": "Floral",
+      "odor": "Rose honey"
+    },
+    {
+      "id": "MOL-048",
+      "name": "Undecanal",
+      "cas": "112-44-7",
+      "inci": "Undecanal",
+      "category": "Aldehyde",
+      "odor": "Fatty waxy"
+    },
+    {
+      "id": "MOL-049",
+      "name": "Dodecanal",
+      "cas": "112-54-9",
+      "inci": "Dodecanal",
+      "category": "Aldehyde",
+      "odor": "Fatty waxy"
+    },
+    {
+      "id": "MOL-050",
+      "name": "2-Heptanone",
+      "cas": "110-43-0",
+      "inci": "2-Heptanone",
+      "category": "Ketone",
+      "odor": "Fruity earthy"
     }
   ],
-  "total": 15
+  "total": 25
 }
