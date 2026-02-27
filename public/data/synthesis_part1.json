@@ -1,0 +1,322 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-001",
+      "name": "Vanillin",
+      "cas": "121-33-5",
+      "category": "Spicy",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Guaiacol Oxidation",
+          "temp": "80-120C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Guaiacol",
+            "Glyoxal",
+            "H2SO4"
+          ],
+          "yield": "78%",
+          "time": "5h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Eugenol Isomerization",
+          "temp": "150-180C",
+          "pressure": "2-3 atm",
+          "reagents": [
+            "Eugenol",
+            "Al2O3 catalyst"
+          ],
+          "yield": "70%",
+          "time": "6h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-002",
+      "name": "Ethyl Vanillin",
+      "cas": "121-32-4",
+      "category": "Spicy",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Vanillin Ethylation",
+          "temp": "50-70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Vanillin",
+            "Ethyl iodide",
+            "K2CO3"
+          ],
+          "yield": "85%",
+          "time": "4h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Direct Synthesis",
+          "temp": "120C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Guaiacol",
+            "Propionaldehyde"
+          ],
+          "yield": "72%",
+          "time": "7h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-003",
+      "name": "Coumarin",
+      "cas": "91-64-5",
+      "category": "Spicy",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Pechmann Condensation",
+          "temp": "100-140C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Phenol",
+            "Malic acid",
+            "H2SO4"
+          ],
+          "yield": "82%",
+          "time": "6h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Salicylaldehyde Acetone",
+          "temp": "80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Salicylaldehyde",
+            "Acetone",
+            "KOH"
+          ],
+          "yield": "75%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-008",
+      "name": "Geraniol",
+      "cas": "106-24-1",
+      "category": "Floral",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Citral Reduction",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Citral",
+            "DIBAL-H",
+            "THF"
+          ],
+          "yield": "88%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Linalool Isomerization",
+          "temp": "100C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Linalool",
+            "Pd catalyst"
+          ],
+          "yield": "80%",
+          "time": "5h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-009",
+      "name": "Linalool",
+      "cas": "78-70-6",
+      "category": "Floral",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Isoprene Addition",
+          "temp": "80-100C",
+          "pressure": "3-5 atm",
+          "reagents": [
+            "Isoprene",
+            "Acetylene",
+            "Ni catalyst"
+          ],
+          "yield": "75%",
+          "time": "8h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Citral Reduction",
+          "temp": "30C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Citral",
+            "NaBH4"
+          ],
+          "yield": "82%",
+          "time": "2h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-016",
+      "name": "Ethyl Butyrate",
+      "cas": "105-54-4",
+      "category": "Fruity",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Direct Esterification",
+          "temp": "60-80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Butyric acid",
+            "H2SO4"
+          ],
+          "yield": "92%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Butyric Anhydride Route",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Butyric anhydride"
+          ],
+          "yield": "95%",
+          "time": "1h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-064",
+      "name": "Caryophyllene",
+      "cas": "87-44-5",
+      "category": "Woody",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Isoprene Coupling",
+          "temp": "120C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Isoprene",
+            "Isoprene",
+            "Ziegler-Natta cat"
+          ],
+          "yield": "68%",
+          "time": "10h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Clove Oil Extraction",
+          "temp": "60-80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Clove oil",
+            "Chromatography"
+          ],
+          "yield": "45%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-032",
+      "name": "Galaxolide",
+      "cas": "1222-05-5",
+      "category": "Musky",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Friedel-Crafts Synthesis",
+          "temp": "80-110C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Benzene",
+            "Hexamethyl tetralin",
+            "AlCl3"
+          ],
+          "yield": "72%",
+          "time": "8h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Multi-step Route",
+          "temp": "100C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Complex aromatic",
+            "Multi reagents"
+          ],
+          "yield": "60%",
+          "time": "12h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-041",
+      "name": "2-Methylpyrazine",
+      "cas": "109-08-0",
+      "category": "Cocoa",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Amino Acid Degradation",
+          "temp": "150-200C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Glycine",
+            "Pyruvaldehyde"
+          ],
+          "yield": "65%",
+          "time": "6h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Condensation Route",
+          "temp": "120C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Diamine",
+            "Glyoxal",
+            "Acid"
+          ],
+          "yield": "70%",
+          "time": "5h",
+          "cost_per_kg": ""
+        }
+      ]
+    }
+  ],
+  "total": 9,
+  "part": "Part 1: Spicy, Floral, Fruity, Woody, Musky, Cocoa"
+}
