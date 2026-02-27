@@ -1,0 +1,249 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-056",
+      "name": "Ethyl Formate",
+      "cas": "109-94-4",
+      "category": "Fruity",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Esterification",
+          "temp": "50-70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Formic acid",
+            "H2SO4"
+          ],
+          "yield": "88%",
+          "time": "2h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Formic Anhydride",
+          "temp": "25C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Ethanol",
+            "Formic anhydride"
+          ],
+          "yield": "92%",
+          "time": "1h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-059",
+      "name": "Linalyl Acetate",
+      "cas": "115-95-7",
+      "category": "Floral",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Linalool Acetylation",
+          "temp": "30-50C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Linalool",
+            "Acetic anhydride"
+          ],
+          "yield": "90%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Acetyl Chloride Route",
+          "temp": "20C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Linalool",
+            "Acetyl chloride"
+          ],
+          "yield": "94%",
+          "time": "2h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-065",
+      "name": "Myrcene",
+      "cas": "123-35-3",
+      "category": "Green",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Hop Oil Extraction",
+          "temp": "40-60C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Hop oil",
+            "Distillation"
+          ],
+          "yield": "0.5-1%",
+          "time": "2h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Isoprene Coupling",
+          "temp": "100C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Isoprene",
+            "Catalyst"
+          ],
+          "yield": "68%",
+          "time": "6h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-073",
+      "name": "Undecanal",
+      "cas": "112-44-7",
+      "category": "Aldehyde",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Undecane Oxidation",
+          "temp": "80-100C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Undecane",
+            "KMnO4",
+            "H2SO4"
+          ],
+          "yield": "72%",
+          "time": "5h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Oxo Process",
+          "temp": "120C",
+          "pressure": "100 atm",
+          "reagents": [
+            "Decene",
+            "CO",
+            "H2",
+            "HCo(CO)4"
+          ],
+          "yield": "78%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-080",
+      "name": "Decanal",
+      "cas": "112-31-2",
+      "category": "Aldehyde",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Decane Oxidation",
+          "temp": "90-110C",
+          "pressure": "2 atm",
+          "reagents": [
+            "Decane",
+            "KMnO4"
+          ],
+          "yield": "70%",
+          "time": "5h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Oxo Synthesis",
+          "temp": "130C",
+          "pressure": "100 atm",
+          "reagents": [
+            "Nonene",
+            "Syngas"
+          ],
+          "yield": "76%",
+          "time": "4h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-092",
+      "name": "Cedrol",
+      "cas": "77-53-2",
+      "category": "Woody",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Cedar Oil Component",
+          "temp": "60-80C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Cedar oil",
+            "Chromatography"
+          ],
+          "yield": "5-8%",
+          "time": "3h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Chemical Synthesis",
+          "temp": "100C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Complex precursor",
+            "Multi-step"
+          ],
+          "yield": "52%",
+          "time": "10h",
+          "cost_per_kg": ""
+        }
+      ]
+    },
+    {
+      "id": "MOL-069",
+      "name": "Skatole",
+      "cas": "83-34-1",
+      "category": "Animalic",
+      "methods": [
+        {
+          "method": 1,
+          "name": "Indole Methylation",
+          "temp": "50-70C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Indole",
+            "Methyl iodide",
+            "K2CO3"
+          ],
+          "yield": "82%",
+          "time": "4h",
+          "cost_per_kg": ""
+        },
+        {
+          "method": 2,
+          "name": "Fischer Indole",
+          "temp": "100C",
+          "pressure": "1 atm",
+          "reagents": [
+            "Methylphenylhydrazine",
+            "Acetaldehyde"
+          ],
+          "yield": "70%",
+          "time": "6h",
+          "cost_per_kg": ""
+        }
+      ]
+    }
+  ],
+  "total": 7,
+  "part": "Part 3: Fruity, Floral, Green, Aldehyde, Woody, Animalic"
+}
