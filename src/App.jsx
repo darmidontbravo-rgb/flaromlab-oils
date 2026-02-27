@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Filter, Droplet, Zap, DollarSign } from 'lucide-react';
+import { Search, Filter, Droplet, Zap, DollarSign, Beaker } from 'lucide-react';
 import SearchComponent from './components/Search';
 import OilCard from './components/OilCard';
 import ComparisonView from './components/ComparisonView';
 import FilterPanel from './components/FilterPanel';
+import FormulasPage from './components/FormulasPage';
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState('oils');
   const [oils, setOils] = useState([]);
   const [filteredOils, setFilteredOils] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -16,7 +18,6 @@ export default function App() {
   const [compareList, setCompareList] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Load oils data
   useEffect(() => {
     const loadOils = async () => {
       try {
@@ -26,44 +27,33 @@ export default function App() {
           name,
           ...oil
         }));
-        console.log('Loaded oils:', oilsArray.length);
         setOils(oilsArray);
         setFilteredOils(oilsArray);
         setLoading(false);
       } catch (error) {
         console.error('Error loading oils:', error);
-        // Fallback: create mock data if JSON fails
         setLoading(false);
       }
     };
-
     loadOils();
   }, []);
 
-  // Filter oils based on search and filters
   useEffect(() => {
     let filtered = oils;
-
     if (searchTerm) {
       filtered = filtered.filter(oil =>
-        oil.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        oil.latin_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        oil.origin?.toLowerCase().includes(searchTerm.toLowerCase())
+        oil.name?.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
-
     if (selectedFamily !== 'ALL') {
       filtered = filtered.filter(oil => oil.family === selectedFamily);
     }
-
     if (selectedPriceRange !== 'ALL') {
       filtered = filtered.filter(oil => oil.price_range?.includes(selectedPriceRange));
     }
-
     if (selectedSynthesis !== 'ALL') {
       filtered = filtered.filter(oil => oil.synthesis_opportunity?.includes(selectedSynthesis));
     }
-
     setFilteredOils(filtered);
   }, [searchTerm, selectedFamily, selectedPriceRange, selectedSynthesis, oils]);
 
@@ -82,7 +72,7 @@ export default function App() {
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="text-center">
           <Droplet className="w-12 h-12 text-amber-600 mx-auto mb-4 animate-bounce" />
-          <h2 className="text-2xl font-bold text-gray-800">Loading Essential Oils Database...</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Loading Database...</h2>
         </div>
       </div>
     );
@@ -95,105 +85,118 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center gap-3 mb-4">
             <Droplet className="w-8 h-8" />
-            <h1 className="text-4xl font-bold">Flaromlab Essential Oils Portal</h1>
+            <h1 className="text-4xl font-bold">Flaromlab Portal</h1>
           </div>
-          <p className="text-amber-100">Comprehensive database of 72 essential oils & synthetic molecules</p>
+          <p className="text-amber-100">Essential oils, formulas & synthetic molecules database</p>
+          
+          {/* Tabs */}
+          <div className="flex gap-4 mt-4 border-t border-amber-400 pt-4">
+            <button
+              onClick={() => setActiveTab('oils')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'oils'
+                  ? 'bg-white text-amber-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <Droplet className="w-4 h-4" />
+              Essential Oils (72)
+            </button>
+            <button
+              onClick={() => setActiveTab('formulas')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'formulas'
+                  ? 'bg-white text-orange-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <Beaker className="w-4 h-4" />
+              Formulas (9)
+            </button>
+          </div>
         </div>
       </header>
 
-      {/* Main Content - TWO COLUMN LAYOUT */}
+      {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="flex flex-col lg:flex-row gap-8">
-          
-          {/* LEFT SIDEBAR - FILTERS (Desktop: Sticky Left, Mobile: Sticky Top) */}
-          <aside className="w-full lg:w-64 flex-shrink-0">
-            {/* Mobile: Sticky Search + Filters at Top */}
-            <div className="sticky top-24 z-40 lg:z-30 lg:top-0">
-              <div className="bg-white rounded-xl shadow-lg p-6 lg:mb-0 mb-6">
-                {/* Search Component */}
-                <div className="mb-6">
-                  <SearchComponent value={searchTerm} onChange={setSearchTerm} />
-                </div>
+        {activeTab === 'oils' ? (
+          // OILS TAB
+          <div className="flex flex-col lg:flex-row gap-8">
+            <aside className="w-full lg:w-64 flex-shrink-0">
+              <div className="sticky top-24 z-40 lg:z-30 lg:top-0">
+                <div className="bg-white rounded-xl shadow-lg p-6 lg:mb-0 mb-6">
+                  <div className="mb-6">
+                    <SearchComponent value={searchTerm} onChange={setSearchTerm} />
+                  </div>
 
-                {/* Filters Panel */}
-                <div className="mb-6 border-t pt-6">
-                  <h3 className="font-bold text-lg mb-4 text-gray-800">Filters</h3>
-                  <FilterPanel
-                    selectedFamily={selectedFamily}
-                    selectedPriceRange={selectedPriceRange}
-                    selectedSynthesis={selectedSynthesis}
-                    onFamilyChange={setSelectedFamily}
-                    onPriceChange={setSelectedPriceRange}
-                    onSynthesisChange={setSelectedSynthesis}
-                  />
-                </div>
+                  <div className="mb-6 border-t pt-6">
+                    <h3 className="font-bold text-lg mb-4 text-gray-800">Filters</h3>
+                    <FilterPanel
+                      selectedFamily={selectedFamily}
+                      selectedPriceRange={selectedPriceRange}
+                      selectedSynthesis={selectedSynthesis}
+                      onFamilyChange={setSelectedFamily}
+                      onPriceChange={setSelectedPriceRange}
+                      onSynthesisChange={setSelectedSynthesis}
+                    />
+                  </div>
 
-                {/* Comparison Controls */}
-                <div className="border-t pt-6">
-                  <button
-                    onClick={() => setComparisonMode(!comparisonMode)}
-                    className={`w-full px-4 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors ${
-                      comparisonMode
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                    }`}
-                  >
-                    <Zap className="w-4 h-4" />
-                    Compare ({compareList.length}/5)
-                  </button>
-
-                  {compareList.length > 1 && comparisonMode && (
+                  <div className="border-t pt-6">
                     <button
-                      onClick={() => setComparisonMode(true)}
-                      className="w-full mt-2 px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                      onClick={() => setComparisonMode(!comparisonMode)}
+                      className={`w-full px-4 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors ${
+                        comparisonMode
+                          ? 'bg-blue-600 text-white'
+                          : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                      }`}
                     >
-                      View Comparison
+                      <Zap className="w-4 h-4" />
+                      Compare ({compareList.length}/5)
                     </button>
-                  )}
+                  </div>
                 </div>
               </div>
-            </div>
-          </aside>
+            </aside>
 
-          {/* RIGHT CONTENT - RESULTS */}
-          <div className="flex-1 min-w-0">
-            {/* Comparison View */}
-            {comparisonMode && compareList.length > 0 && (
-              <div className="mb-8">
-                <ComparisonView oils={compareList} />
+            <div className="flex-1 min-w-0">
+              {comparisonMode && compareList.length > 0 && (
+                <div className="mb-8">
+                  <ComparisonView oils={compareList} />
+                </div>
+              )}
+
+              <div className="mb-6 text-gray-600">
+                <p className="text-lg font-semibold">
+                  Found <span className="text-amber-600">{filteredOils.length}</span> oils
+                  {searchTerm && ` matching "${searchTerm}"`}
+                </p>
               </div>
-            )}
 
-            {/* Results Info */}
-            <div className="mb-6 text-gray-600">
-              <p className="text-lg font-semibold">
-                Found <span className="text-amber-600">{filteredOils.length}</span> oils
-                {searchTerm && ` matching "${searchTerm}"`}
-              </p>
-            </div>
-
-            {/* Oils Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {filteredOils.map((oil, index) => (
-                <OilCard
-                  key={index}
-                  oil={oil}
-                  isComparing={comparisonMode}
-                  isSelected={compareList.some(item => item.name === oil.name)}
-                  onCompareToggle={toggleCompare}
-                />
-              ))}
-            </div>
-
-            {filteredOils.length === 0 && (
-              <div className="text-center py-16">
-                <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-600 mb-2">No oils found</h3>
-                <p className="text-gray-500">Try adjusting your search or filters</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {filteredOils.map((oil, index) => (
+                  <OilCard
+                    key={index}
+                    oil={oil}
+                    isComparing={comparisonMode}
+                    isSelected={compareList.some(item => item.name === oil.name)}
+                    onCompareToggle={toggleCompare}
+                  />
+                ))}
               </div>
-            )}
+
+              {filteredOils.length === 0 && (
+                <div className="text-center py-16">
+                  <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold text-gray-600 mb-2">No oils found</h3>
+                  <p className="text-gray-500">Try adjusting your search or filters</p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        ) : (
+          // FORMULAS TAB
+          <FormulasPage />
+        )}
       </main>
 
       {/* Footer */}
@@ -204,8 +207,8 @@ export default function App() {
               <h3 className="font-bold text-lg mb-3">Database</h3>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition">72 Essential Oils</a></li>
-                <li><a href="#" className="hover:text-white transition">21 Families</a></li>
-                <li><a href="#" className="hover:text-white transition">Synthetic Data</a></li>
+                <li><a href="#" className="hover:text-white transition">9 Formulas</a></li>
+                <li><a href="#" className="hover:text-white transition">96+ Molecules</a></li>
               </ul>
             </div>
             <div>
@@ -232,11 +235,10 @@ export default function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-            <p>&copy; 2026 Flaromlab. Essential Oils Database. All rights reserved.</p>
+            <p>&copy; 2026 Flaromlab. All rights reserved.</p>
           </div>
         </div>
       </footer>
     </div>
   );
 }
-
