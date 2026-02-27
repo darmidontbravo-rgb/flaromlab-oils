@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Filter, Droplet, Zap, DollarSign, Beaker, Atom, Lightbulb } from 'lucide-react';
+import { Search, Filter, Droplet, Zap, DollarSign, Beaker, Atom, Lightbulb, FlaskConical, BarChart3 } from 'lucide-react';
 import SearchComponent from './components/Search';
 import OilCard from './components/OilCard';
 import ComparisonView from './components/ComparisonView';
@@ -7,6 +7,8 @@ import FilterPanel from './components/FilterPanel';
 import FormulasPage from './components/FormulasPage';
 import MoleculesPage from './components/MoleculesPage';
 import FormulaBuilder from './components/FormulaBuilder';
+import SynthesisPage from './components/SynthesisPage';
+import AnalyticsDashboard from './components/AnalyticsDashboard';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('oils');
@@ -137,6 +139,28 @@ export default function App() {
               <Lightbulb className="w-4 h-4" />
               Formula Builder
             </button>
+            <button
+              onClick={() => setActiveTab('synthesis')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'synthesis'
+                  ? 'bg-white text-green-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <FlaskConical className="w-4 h-4" />
+              Synthesis
+            </button>
+            <button
+              onClick={() => setActiveTab('analytics')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'analytics'
+                  ? 'bg-white text-indigo-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <BarChart3 className="w-4 h-4" />
+              Analytics
+            </button>
           </div>
         </div>
       </header>
@@ -223,9 +247,15 @@ export default function App() {
         ) : activeTab === 'molecules' ? (
           // MOLECULES TAB
           <MoleculesPage />
-        ) : (
+        ) : activeTab === 'builder' ? (
           // FORMULA BUILDER TAB
           <FormulaBuilder />
+        ) : activeTab === 'synthesis' ? (
+          // SYNTHESIS TAB
+          <SynthesisPage />
+        ) : (
+          // ANALYTICS TAB
+          <AnalyticsDashboard />
         )}
       </main>
 
