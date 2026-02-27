@@ -1,0 +1,282 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-126",
+      "name": "Galbanum Oil",
+      "cas": "Natural",
+      "inci": "Ferula Galbaniflua",
+      "category": "Green",
+      "mw": null,
+      "description": "Green spicy natural oil with fresh, herbal character. Creates green effects. Used in fresh and chypre fragrances. Good fixative.",
+      "organoleptic": "Green, herbal, spicy, fresh, vegetal",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 50,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Citral",
+        "Cis-3-Hexenol",
+        "Linalool"
+      ],
+      "price_usd_per_kg": 65
+    },
+    {
+      "id": "MOL-127",
+      "name": "Bergamot Oil",
+      "cas": "Natural",
+      "inci": "Citrus Bergamia",
+      "category": "Citrus",
+      "mw": null,
+      "description": "Precious citrus oil with fresh, slightly floral character. Essential for eau de Cologne fragrances. Good diffusion. Excellent top note.",
+      "organoleptic": "Citrus, fresh, floral, slightly spicy, bright",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 80,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "24 months",
+      "compatibility": [
+        "Linalool",
+        "Limonene",
+        "Neroli"
+      ],
+      "price_usd_per_kg": 55
+    },
+    {
+      "id": "MOL-128",
+      "name": "Neroli Oil",
+      "cas": "Natural",
+      "inci": "Citrus Aurantium",
+      "category": "Floral",
+      "mw": null,
+      "description": "Precious floral oil with fresh, green-floral character. Essential for fine fragrances. Excellent middle note. Creates luminous effects.",
+      "organoleptic": "Floral, fresh, green, citrusy, bright",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 80,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "24 months",
+      "compatibility": [
+        "Linalool",
+        "Geraniol",
+        "Rose Oxide"
+      ],
+      "price_usd_per_kg": 120
+    },
+    {
+      "id": "MOL-129",
+      "name": "Ylang Ylang Oil",
+      "cas": "Natural",
+      "inci": "Cananga Odorata",
+      "category": "Floral",
+      "mw": null,
+      "description": "Precious floral oil with exotic, slightly spicy character. Creates rich floral effects. Excellent for oriental fragrances. Good fixative.",
+      "organoleptic": "Floral, exotic, spicy, creamy, sensual",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 70,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Benzoin",
+        "Sandalwood",
+        "Vanillin",
+        "Geraniol"
+      ],
+      "price_usd_per_kg": 85
+    },
+    {
+      "id": "MOL-130",
+      "name": "Tuberose Absolute",
+      "cas": "Natural",
+      "inci": "Polianthes Tuberosa",
+      "category": "Floral",
+      "mw": null,
+      "description": "Exotic floral absolute with rich, creamy character. Creates luxurious effects. Essential for chypre and floral fragrances. Excellent fixative.",
+      "organoleptic": "Floral, creamy, rich, indolic, sensual",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 70,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Indole",
+        "Benzoin",
+        "Sandalwood",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 200
+    },
+    {
+      "id": "MOL-131",
+      "name": "Oakmoss Absolute",
+      "cas": "Natural",
+      "inci": "Evernia Prunastri",
+      "category": "Woody",
+      "mw": null,
+      "description": "Woody, lichen-derived absolute with earthy character. Essential for chypre fragrances. Excellent fixative. Creates warm, mossy effects.",
+      "organoleptic": "Woody, earthy, mossy, warm, animalic",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Restricted",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Benzoin",
+        "Cedarwood",
+        "Sandalwood",
+        "Geraniol"
+      ],
+      "price_usd_per_kg": 180
+    },
+    {
+      "id": "MOL-132",
+      "name": "Labdanum Resin",
+      "cas": "Natural",
+      "inci": "Cistus Labdaniferus",
+      "category": "Amber",
+      "mw": null,
+      "description": "Precious amber resin with warm, sweet character. Excellent fixative. Creates warm, sensual effects. Essential for amber fragrances.",
+      "organoleptic": "Amber, warm, sweet, resinous, sensual",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Benzoin",
+        "Sandalwood",
+        "Vanillin",
+        "Ambroxan"
+      ],
+      "price_usd_per_kg": 150
+    },
+    {
+      "id": "MOL-133",
+      "name": "Benzoin Resin",
+      "cas": "Natural",
+      "inci": "Styrax Benzoin",
+      "category": "Amber",
+      "mw": null,
+      "description": "Sweet, warm resin with vanilla-like character. Essential fixative. Creates warm, sensual effects. Used in oriental fragrances.",
+      "organoleptic": "Sweet, warm, vanilla-like, balsamic, creamy",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 65,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Vanillin",
+        "Sandalwood",
+        "Geraniol",
+        "Linalool"
+      ],
+      "price_usd_per_kg": 85
+    },
+    {
+      "id": "MOL-134",
+      "name": "Amyris Oil",
+      "cas": "Natural",
+      "inci": "Amyris Balsamifera",
+      "category": "Woody",
+      "mw": null,
+      "description": "Woody, slightly fruity natural oil. Creates warm, woody effects. Used in woody fragrances. Good fixative. Sustainable alternative.",
+      "organoleptic": "Woody, warm, slightly fruity, sweet, creamy",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Sandalwood",
+        "Cedarwood",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 42
+    },
+    {
+      "id": "MOL-135",
+      "name": "Davana Oil",
+      "cas": "Natural",
+      "inci": "Artemisia Pallens",
+      "category": "Fruity",
+      "mw": null,
+      "description": "Fruity, slightly spicy natural oil with apricot-like character. Creates warm, fruity effects. Used in chypre fragrances. Good fixative.",
+      "organoleptic": "Fruity, apricot-like, spicy, warm, sweet",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Geraniol",
+        "Benzoin",
+        "Vanillin",
+        "Sandalwood"
+      ],
+      "price_usd_per_kg": 95
+    }
+  ],
+  "total": 10,
+  "part": "Part 7: Premium Natural Oils & Resins (Final collection)"
+}
