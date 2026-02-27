@@ -7,6 +7,7 @@ export default function MoleculesPage() {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [expandedMolecule, setExpandedMolecule] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const loadMolecules = async () => {
@@ -14,7 +15,7 @@ export default function MoleculesPage() {
         console.log('Starting to load molecules...');
         const allMolecules = [];
         
-        // Load all 7 parts
+        // Load all 7 parts sequentially to ensure we get all data
         const fileNames = [
           'molecules_part1.json',
           'molecules_part2.json',
@@ -27,26 +28,37 @@ export default function MoleculesPage() {
         
         for (const fileName of fileNames) {
           try {
+            console.log(`Loading ${fileName}...`);
             const response = await fetch(`/data/${fileName}`);
-            if (response.ok) {
-              const data = await response.json();
-              if (data.molecules && Array.isArray(data.molecules)) {
-                allMolecules.push(...data.molecules);
-                console.log(`Loaded ${data.molecules.length} molecules from ${fileName}`);
-              }
-            } else {
-              console.warn(`File not found: ${fileName} (Status: ${response.status})`);
+            
+            if (!response.ok) {
+              console.warn(`Failed to load ${fileName}: ${response.status}`);
+              continue;
             }
+            
+            const data = await response.json();
+            const mols = data.molecules || [];
+            
+            console.log(`Loaded ${mols.length} molecules from ${fileName}`);
+            allMolecules.push(...mols);
+            
           } catch (error) {
             console.warn(`Error loading ${fileName}:`, error);
           }
         }
         
         console.log(`Total molecules loaded: ${allMolecules.length}`);
+        
+        if (allMolecules.length === 0) {
+          setError('No molecules loaded. Check console for errors.');
+        }
+        
         setMolecules(allMolecules);
         setLoading(false);
+        
       } catch (error) {
-        console.error('Error loading molecules:', error);
+        console.error('Critical error loading molecules:', error);
+        setError(`Error: ${error.message}`);
         setLoading(false);
       }
     };
@@ -57,15 +69,29 @@ export default function MoleculesPage() {
   const filtered = molecules.filter(m => {
     const matchSearch = !searchTerm || 
       m.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      m.cas.toLowerCase().includes(searchTerm.toLowerCase());
+      (m.cas && m.cas.toLowerCase().includes(searchTerm.toLowerCase()));
     const matchCategory = selectedCategory === 'ALL' || m.category === selectedCategory;
     return matchSearch && matchCategory;
   });
 
-  const categories = ['ALL', ...new Set(molecules.map(m => m.category))];
+  const categories = ['ALL', ...new Set(molecules.map(m => m.category).filter(Boolean))];
 
   if (loading) {
-    return <div className="text-center py-16 text-gray-600">Loading molecules database...</div>;
+    return (
+      <div className="text-center py-16 text-gray-600">
+        <div className="animate-spin inline-block w-8 h-8 border-4 border-purple-200 border-t-purple-600 rounded-full mb-4"></div>
+        <p>Loading molecules database...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-16 text-red-600">
+        <p className="font-bold mb-2">Error loading molecules</p>
+        <p className="text-sm">{error}</p>
+      </div>
+    );
   }
 
   return (
@@ -73,11 +99,11 @@ export default function MoleculesPage() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         
         <h1 className="text-4xl font-bold text-gray-800 mb-2">Molecules Database</h1>
-        <p className="text-gray-600 mb-8">Complete library of {molecules.length}+ molecules for perfumery and flavoring</p>
+        <p className="text-gray-600 mb-8">Complete library of {molecules.length} molecules for perfumery and flavoring</p>
 
         <div className="flex flex-col lg:flex-row gap-8">
           
-          {/* LEFT SIDEBAR */}
+          {/* LEFT SIDEBAR - FILTERS */}
           <aside className="w-full lg:w-72 flex-shrink-0">
             <div className="sticky top-24 z-40 lg:z-30 lg:top-0">
               <div className="bg-white rounded-xl shadow-lg p-6">
@@ -116,7 +142,7 @@ export default function MoleculesPage() {
             </div>
           </aside>
 
-          {/* RIGHT CONTENT */}
+          {/* RIGHT CONTENT - RESULTS */}
           <div className="flex-1">
             <div className="mb-6">
               <p className="text-lg font-semibold text-gray-800">
@@ -129,15 +155,15 @@ export default function MoleculesPage() {
               {filtered.map((mol) => (
                 <div key={mol.id} className="bg-white rounded-lg shadow hover:shadow-lg transition-all border-l-4 border-purple-500 overflow-hidden">
                   
-                  {/* Header */}
+                  {/* HEADER */}
                   <div
                     onClick={() => setExpandedMolecule(expandedMolecule === mol.id ? null : mol.id)}
                     className="p-4 cursor-pointer hover:bg-purple-50 flex justify-between items-start"
                   >
                     <div className="flex-1">
                       <div className="font-bold text-lg text-gray-800">{mol.name}</div>
-                      <div className="text-sm text-gray-600">CAS: {mol.cas}</div>
-                      <div className="text-xs text-purple-600 font-semibold mt-1">{mol.category}</div>
+                      <div className="text-sm text-gray-600">CAS: {mol.cas || 'N/A'}</div>
+                      <div className="text-xs text-purple-600 font-semibold mt-1">{mol.category || 'General'}</div>
                     </div>
                     <div className="text-right ml-4">
                       {mol.price_usd_per_kg && (
@@ -154,7 +180,7 @@ export default function MoleculesPage() {
                     </div>
                   </div>
 
-                  {/* Expanded Details */}
+                  {/* EXPANDED DETAILS */}
                   {expandedMolecule === mol.id && (
                     <div className="bg-purple-50 p-4 border-t space-y-3 text-sm">
                       {mol.description && (
@@ -196,7 +222,7 @@ export default function MoleculesPage() {
                         </div>
                       )}
                       
-                      {mol.compatibility && (
+                      {mol.compatibility && Array.isArray(mol.compatibility) && mol.compatibility.length > 0 && (
                         <div className="pt-2 border-t">
                           <span className="font-semibold text-gray-700 block mb-2">Compatible with:</span>
                           <div className="flex flex-wrap gap-2">
@@ -209,7 +235,7 @@ export default function MoleculesPage() {
                         </div>
                       )}
                       
-                      {mol.suppliers && (
+                      {mol.suppliers && Array.isArray(mol.suppliers) && mol.suppliers.length > 0 && (
                         <div>
                           <span className="font-semibold text-gray-700">Suppliers:</span>
                           <div className="flex flex-wrap gap-2 mt-2">
