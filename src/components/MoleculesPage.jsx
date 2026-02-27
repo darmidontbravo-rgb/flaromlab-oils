@@ -14,11 +14,15 @@ export default function MoleculesPage() {
         const part1 = await fetch('/data/molecules_part1.json').then(r => r.json());
         const part2 = await fetch('/data/molecules_part2.json').then(r => r.json());
         const part3 = await fetch('/data/molecules_part3.json').then(r => r.json());
+        const part4 = await fetch('/data/molecules_part4.json').then(r => r.json());
+        const part5 = await fetch('/data/molecules_part5.json').then(r => r.json());
         
         const allMolecules = [
           ...part1.molecules,
           ...part2.molecules,
-          ...part3.molecules
+          ...part3.molecules,
+          ...part4.molecules,
+          ...part5.molecules
         ];
         
         setMolecules(allMolecules);
