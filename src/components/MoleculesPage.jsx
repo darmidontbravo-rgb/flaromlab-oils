@@ -11,17 +11,45 @@ export default function MoleculesPage() {
   useEffect(() => {
     const loadMolecules = async () => {
       try {
-        const parts = await Promise.all([
-          fetch('/data/molecules_part1.json').then(r => r.json()),
-          fetch('/data/molecules_part2.json').then(r => r.json()),
-          fetch('/data/molecules_part3.json').then(r => r.json()),
-          fetch('/data/molecules_part4_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
-          fetch('/data/molecules_part5_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
-          fetch('/data/molecules_part6_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
-          fetch('/data/molecules_part7_expanded.json').then(r => r.json()).catch(() => ({ molecules: [] })),
-        ]);
+        const allParts = [];
         
-        const allMolecules = parts.flatMap(part => part.molecules);
+        // Load base parts (required)
+        const part1 = await fetch('/data/molecules_part1.json').then(r => r.json());
+        const part2 = await fetch('/data/molecules_part2.json').then(r => r.json());
+        const part3 = await fetch('/data/molecules_part3.json').then(r => r.json());
+        allParts.push(part1, part2, part3);
+        
+        // Try to load expanded parts (optional)
+        try {
+          const part4 = await fetch('/data/molecules_part4_expanded.json').then(r => r.json());
+          allParts.push(part4);
+        } catch (e) {
+          console.log('Part 4 not available yet');
+        }
+        
+        try {
+          const part5 = await fetch('/data/molecules_part5_expanded.json').then(r => r.json());
+          allParts.push(part5);
+        } catch (e) {
+          console.log('Part 5 not available yet');
+        }
+        
+        try {
+          const part6 = await fetch('/data/molecules_part6_expanded.json').then(r => r.json());
+          allParts.push(part6);
+        } catch (e) {
+          console.log('Part 6 not available yet');
+        }
+        
+        try {
+          const part7 = await fetch('/data/molecules_part7_expanded.json').then(r => r.json());
+          allParts.push(part7);
+        } catch (e) {
+          console.log('Part 7 not available yet');
+        }
+        
+        const allMolecules = allParts.flatMap(part => part.molecules || []);
+        console.log(`Loaded ${allMolecules.length} total molecules from ${allParts.length} parts`);
         setMolecules(allMolecules);
         setLoading(false);
       } catch (error) {
