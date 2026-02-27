@@ -1,0 +1,284 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-106",
+      "name": "Benzyl Formate",
+      "cas": "104-63-2",
+      "inci": "Benzyl Formate",
+      "category": "Fruity",
+      "mw": 136.15,
+      "description": "Fruity ester with cherry-like character. Creates fresh fruity effects. Used in floral and fruity fragrances. Good diffusion. Stable in fragrance bases.",
+      "organoleptic": "Cherry, fruity, fresh, floral-fruity",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 70,
+        "flavoring": 40
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Benzyl Acetate",
+        "Isoamyl Acetate",
+        "Linalool"
+      ],
+      "price_usd_per_kg": 32
+    },
+    {
+      "id": "MOL-107",
+      "name": "Hexyl Hexanoate",
+      "cas": "6378-65-0",
+      "inci": "Hexyl Hexanoate",
+      "category": "Fruity",
+      "mw": 200.32,
+      "description": "Fruity waxy ester with anise-fruity character. Creates warm fruity notes. Used in gourmand fragrances. Excellent tenacity. Good solubility.",
+      "organoleptic": "Fruity, waxy, anise-like, warm, creamy",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 70,
+        "flavoring": 35
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Ethyl Butyrate",
+        "Isoamyl Acetate",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 40
+    },
+    {
+      "id": "MOL-108",
+      "name": "Ionone Alpha",
+      "cas": "127-41-3",
+      "inci": "Alpha-Ionone",
+      "category": "Woody",
+      "mw": 192.3,
+      "description": "Violet-woody compound with iris-like character. Creates soft, powdery violet notes. Excellent fixative. Used in chypre and woody fragrances. Very good stability.",
+      "organoleptic": "Violet, iris, woody, powdery, floral",
+      "applications": {
+        "perfumery": 30,
+        "fragrance": 80,
+        "cosmetics": 20
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Geraniol",
+        "Rose Oxide",
+        "Sandalwood",
+        "Benzoin"
+      ],
+      "price_usd_per_kg": 120
+    },
+    {
+      "id": "MOL-109",
+      "name": "Ionone Beta",
+      "cas": "79-77-6",
+      "inci": "Beta-Ionone",
+      "category": "Woody",
+      "mw": 192.3,
+      "description": "Woody-fruity compound with plum and violet character. Creates warm, fruity-woody notes. Used in amber and oriental fragrances. Good tenacity.",
+      "organoleptic": "Plum, violet, fruity-woody, warm, sweet",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 75,
+        "cosmetics": 15
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Vanillin",
+        "Benzoin",
+        "Sandalwood",
+        "Cedarwood"
+      ],
+      "price_usd_per_kg": 85
+    },
+    {
+      "id": "MOL-110",
+      "name": "Helional",
+      "cas": "4479-38-1",
+      "inci": "Helional",
+      "category": "Green",
+      "mw": 166.22,
+      "description": "Green floral compound with watermelon and melon-like notes. Creates fresh, fruity-green effects. Excellent diffusion. Used in fresh and fruity fragrances.",
+      "organoleptic": "Watermelon, melon, green, fresh, fruity",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 80,
+        "cosmetics": 15
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Citral",
+        "Cis-3-Hexenol",
+        "Linalool",
+        "Geraniol"
+      ],
+      "price_usd_per_kg": 75
+    },
+    {
+      "id": "MOL-111",
+      "name": "Verdox",
+      "cas": "13026-91-2",
+      "inci": "Verdox",
+      "category": "Green",
+      "mw": 164.2,
+      "description": "Green fruity compound with apple and herbal character. Creates fresh green effects. Used in citrus and fresh fragrances. Good stability and diffusion.",
+      "organoleptic": "Apple, green, fresh, herbal, fruity",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 75,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Citral",
+        "Linalool",
+        "Hexanal",
+        "Octanal"
+      ],
+      "price_usd_per_kg": 55
+    },
+    {
+      "id": "MOL-112",
+      "name": "Floralozone",
+      "cas": "144049-77-6",
+      "inci": "Floralozone",
+      "category": "Floral",
+      "mw": 242.32,
+      "description": "Synthetic floral compound with peachy-fruity-green character. Creates transparent floral effects. Used in modern fruity-floral fragrances. Excellent versatility.",
+      "organoleptic": "Peach, fruity, green, floral, fresh",
+      "applications": {
+        "perfumery": 30,
+        "fragrance": 85,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Citral",
+        "Linalool",
+        "Benzoin",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 95
+    },
+    {
+      "id": "MOL-113",
+      "name": "Cyclamen Aldehyde",
+      "cas": "103-95-7",
+      "inci": "Cyclamen Aldehyde",
+      "category": "Floral",
+      "mw": 162.19,
+      "description": "Floral aldehydic compound with lily-of-the-valley character. Creates fresh, aldehydic floral effects. Used in modern and classic fragrances. Good diffusion.",
+      "organoleptic": "Floral, aldehydic, green, fresh, fruity",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 80,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Citral",
+        "Linalool",
+        "Geraniol",
+        "Rose Oxide"
+      ],
+      "price_usd_per_kg": 65
+    },
+    {
+      "id": "MOL-114",
+      "name": "Phenyl Ethyl Formate",
+      "cas": "104-63-2",
+      "inci": "Phenyl Ethyl Formate",
+      "category": "Floral",
+      "mw": 150.18,
+      "description": "Floral fruity ester with rose and green apple character. Creates fresh floral effects. Used in floral and fresh fragrances. Good solubility.",
+      "organoleptic": "Rose, fruity, green apple, floral, fresh",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 75,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "2-Phenylethyl Acetate",
+        "Linalool",
+        "Citral",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 38
+    },
+    {
+      "id": "MOL-115",
+      "name": "Isoquercitrin",
+      "cas": "482-35-9",
+      "inci": "Isoquercitrin",
+      "category": "Natural Extract",
+      "mw": 464.38,
+      "description": "Natural flavonoid from plants with bitter-fruity character. Creates natural floral effects. Used in premium fragrances. Good stability.",
+      "organoleptic": "Fruity, bitter, floral, herbal, natural",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 30,
+        "flavoring": 20
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Vanillin",
+        "Benzoin",
+        "Geraniol",
+        "Citral"
+      ],
+      "price_usd_per_kg": 200
+    }
+  ],
+  "total": 10,
+  "part": "Part 5: Fruity, Woody, Green, Floral, Natural (Expanded with descriptions)"
+}
