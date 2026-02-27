@@ -1,0 +1,110 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-041",
+      "name": "2-Methylpyrazine",
+      "cas": "109-08-0",
+      "category": "Cocoa",
+      "odor": "Roasted cocoa"
+    },
+    {
+      "id": "MOL-042",
+      "name": "Furfural",
+      "cas": "98-01-1",
+      "category": "Cocoa",
+      "odor": "Roasted bread"
+    },
+    {
+      "id": "MOL-043",
+      "name": "3-Methylbutanal",
+      "cas": "590-86-3",
+      "category": "Cocoa",
+      "odor": "Fruity malty"
+    },
+    {
+      "id": "MOL-044",
+      "name": "Acetoin",
+      "cas": "513-86-0",
+      "category": "Cocoa",
+      "odor": "Buttery creamy"
+    },
+    {
+      "id": "MOL-045",
+      "name": "Maltol",
+      "cas": "118-02-5",
+      "category": "Cocoa",
+      "odor": "Caramel sweet"
+    },
+    {
+      "id": "MOL-046",
+      "name": "Ethyl Maltol",
+      "cas": "4940-11-8",
+      "category": "Cocoa",
+      "odor": "Caramel sweet"
+    },
+    {
+      "id": "MOL-047",
+      "name": "Phenylacetaldehyde",
+      "cas": "104-53-0",
+      "category": "Floral",
+      "odor": "Rose honey"
+    },
+    {
+      "id": "MOL-048",
+      "name": "Undecanal",
+      "cas": "112-44-7",
+      "category": "Aldehyde",
+      "odor": "Fatty waxy"
+    },
+    {
+      "id": "MOL-049",
+      "name": "Dodecanal",
+      "cas": "112-54-9",
+      "category": "Aldehyde",
+      "odor": "Fatty waxy"
+    },
+    {
+      "id": "MOL-050",
+      "name": "2-Heptanone",
+      "cas": "110-43-0",
+      "category": "Ketone",
+      "odor": "Fruity earthy"
+    },
+    {
+      "id": "MOL-051",
+      "name": "6-Methyl-5-hepten-2-one",
+      "cas": "6728-26-3",
+      "category": "Ketone",
+      "odor": "Herbal fruity"
+    },
+    {
+      "id": "MOL-052",
+      "name": "Acetone",
+      "cas": "67-64-1",
+      "category": "Ketone",
+      "odor": "Sharp solvent"
+    },
+    {
+      "id": "MOL-053",
+      "name": "Benzyl Alcohol",
+      "cas": "100-51-6",
+      "category": "Custom",
+      "odor": "Floral benzoin"
+    },
+    {
+      "id": "MOL-054",
+      "name": "Phenethyl Alcohol",
+      "cas": "60-12-8",
+      "category": "Custom",
+      "odor": "Rose floral"
+    },
+    {
+      "id": "MOL-055",
+      "name": "Methyl Anthranilate",
+      "cas": "134-20-3",
+      "category": "Fruity",
+      "odor": "Grape fruity"
+    }
+  ],
+  "total": 15
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "total_molecules": 150,
+    "version": "1.0",
+    "created": "2026-02-27",
+    "description": "Professional molecules database for perfumery and flavoring"
+  },
+  "parts": [
+    {
+      "part": 1,
+      "file": "molecules_part1.json",
+      "categories": [
+        "Spicy",
+        "Floral",
+        "Fruity"
+      ],
+      "molecules": 25
+    },
+    {
+      "part": 2,
+      "file": "molecules_part2.json",
+      "categories": [
+        "Woody",
+        "Musky",
+        "Green"
+      ],
+      "molecules": 25
+    },
+    {
+      "part": 3,
+      "file": "molecules_part3.json",
+      "categories": [
+        "Cocoa",
+        "Aldehyde",
+        "Ketone",
+        "Custom"
+      ],
+      "molecules": 15
+    }
+  ],
+  "future_expansion": "Can add molecules_part4.json, part5.json etc for full 500+ database"
+}

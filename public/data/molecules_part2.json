@@ -1,0 +1,110 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-026",
+      "name": "Cedarwood",
+      "cas": "Cedrol",
+      "category": "Woody",
+      "odor": "Woody cedar"
+    },
+    {
+      "id": "MOL-027",
+      "name": "Sandalwood",
+      "cas": "Santalol",
+      "category": "Woody",
+      "odor": "Woody sandalwood"
+    },
+    {
+      "id": "MOL-028",
+      "name": "Vetiver",
+      "cas": "Vetiverol",
+      "category": "Woody",
+      "odor": "Earthy woody"
+    },
+    {
+      "id": "MOL-029",
+      "name": "Guaiacol",
+      "cas": "90-05-1",
+      "category": "Woody",
+      "odor": "Smoky woody"
+    },
+    {
+      "id": "MOL-030",
+      "name": "Isoeugenol",
+      "cas": "97-54-1",
+      "category": "Woody",
+      "odor": "Warm woody"
+    },
+    {
+      "id": "MOL-031",
+      "name": "Iso E Super",
+      "cas": "54144-13-3",
+      "category": "Woody",
+      "odor": "Woody mineral"
+    },
+    {
+      "id": "MOL-032",
+      "name": "Galaxolide",
+      "cas": "1222-05-5",
+      "category": "Musky",
+      "odor": "Soft musky"
+    },
+    {
+      "id": "MOL-033",
+      "name": "HHCB",
+      "cas": "38700-29-7",
+      "category": "Musky",
+      "odor": "Musky"
+    },
+    {
+      "id": "MOL-034",
+      "name": "AHTN",
+      "cas": "25154-52-3",
+      "category": "Musky",
+      "odor": "Musky"
+    },
+    {
+      "id": "MOL-035",
+      "name": "Hexanal",
+      "cas": "66-25-1",
+      "category": "Green",
+      "odor": "Fresh green"
+    },
+    {
+      "id": "MOL-036",
+      "name": "Octanal",
+      "cas": "124-13-0",
+      "category": "Green",
+      "odor": "Fresh citrus"
+    },
+    {
+      "id": "MOL-037",
+      "name": "Limonene",
+      "cas": "138-86-3",
+      "category": "Green",
+      "odor": "Lemon citrus"
+    },
+    {
+      "id": "MOL-038",
+      "name": "Pinene",
+      "cas": "80-56-8",
+      "category": "Green",
+      "odor": "Pine fresh"
+    },
+    {
+      "id": "MOL-039",
+      "name": "Cis-3-Hexenol",
+      "cas": "928-96-1",
+      "category": "Green",
+      "odor": "Grass green"
+    },
+    {
+      "id": "MOL-040",
+      "name": "Cis-3-Hexenyl Acetate",
+      "cas": "3681-71-8",
+      "category": "Green",
+      "odor": "Grassy fruity"
+    }
+  ],
+  "total": 15
+}
