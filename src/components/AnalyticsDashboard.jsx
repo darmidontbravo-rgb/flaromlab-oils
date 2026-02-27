@@ -200,7 +200,7 @@ export default function AnalyticsDashboard() {
             <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-lg p-4">
               <div className="text-sm text-gray-600 font-semibold">Median Cost</div>
               <div className="text-2xl font-bold text-indigo-600 mt-2">
-                ${(formulas.length > 0 ? formulas.sort((a, b) => (a.cost || 0) - (b.cost || 0))[Math.floor(formulas.length / 2)]?.cost || 0).toFixed(2)}/L
+                ${(formulas.length > 0 ? (formulas.map(f => f.cost || 0).sort((a, b) => a - b)[Math.floor(formulas.length / 2)] || 0) : 0).toFixed(2)}/L
               </div>
             </div>
             <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-4">
