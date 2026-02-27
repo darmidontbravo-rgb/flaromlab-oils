@@ -101,80 +101,99 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main Content - TWO COLUMN LAYOUT */}
       <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Search & Filters */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 sticky top-24 z-40">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <SearchComponent value={searchTerm} onChange={setSearchTerm} />
-            <FilterPanel
-              selectedFamily={selectedFamily}
-              selectedPriceRange={selectedPriceRange}
-              selectedSynthesis={selectedSynthesis}
-              onFamilyChange={setSelectedFamily}
-              onPriceChange={setSelectedPriceRange}
-              onSynthesisChange={setSelectedSynthesis}
-            />
-          </div>
+        <div className="flex flex-col lg:flex-row gap-8">
+          
+          {/* LEFT SIDEBAR - FILTERS (Desktop: Sticky Left, Mobile: Sticky Top) */}
+          <aside className="w-full lg:w-64 flex-shrink-0">
+            {/* Mobile: Sticky Search + Filters at Top */}
+            <div className="sticky top-24 z-40 lg:z-30 lg:top-0">
+              <div className="bg-white rounded-xl shadow-lg p-6 lg:mb-0 mb-6">
+                {/* Search Component */}
+                <div className="mb-6">
+                  <SearchComponent value={searchTerm} onChange={setSearchTerm} />
+                </div>
 
-          {/* Comparison Controls */}
-          <div className="mt-4 flex items-center gap-3">
-            <button
-              onClick={() => setComparisonMode(!comparisonMode)}
-              className={`px-4 py-2 rounded-lg font-semibold flex items-center gap-2 transition-colors ${
-                comparisonMode
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-              }`}
-            >
-              <Zap className="w-4 h-4" />
-              Compare Mode ({compareList.length}/5)
-            </button>
+                {/* Filters Panel */}
+                <div className="mb-6 border-t pt-6">
+                  <h3 className="font-bold text-lg mb-4 text-gray-800">Filters</h3>
+                  <FilterPanel
+                    selectedFamily={selectedFamily}
+                    selectedPriceRange={selectedPriceRange}
+                    selectedSynthesis={selectedSynthesis}
+                    onFamilyChange={setSelectedFamily}
+                    onPriceChange={setSelectedPriceRange}
+                    onSynthesisChange={setSelectedSynthesis}
+                  />
+                </div>
 
-            {compareList.length > 1 && comparisonMode && (
-              <button
-                onClick={() => setComparisonMode(true)}
-                className="px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors"
-              >
-                View Comparison
-              </button>
+                {/* Comparison Controls */}
+                <div className="border-t pt-6">
+                  <button
+                    onClick={() => setComparisonMode(!comparisonMode)}
+                    className={`w-full px-4 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors ${
+                      comparisonMode
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+                    }`}
+                  >
+                    <Zap className="w-4 h-4" />
+                    Compare ({compareList.length}/5)
+                  </button>
+
+                  {compareList.length > 1 && comparisonMode && (
+                    <button
+                      onClick={() => setComparisonMode(true)}
+                      className="w-full mt-2 px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                    >
+                      View Comparison
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          {/* RIGHT CONTENT - RESULTS */}
+          <div className="flex-1 min-w-0">
+            {/* Comparison View */}
+            {comparisonMode && compareList.length > 0 && (
+              <div className="mb-8">
+                <ComparisonView oils={compareList} />
+              </div>
+            )}
+
+            {/* Results Info */}
+            <div className="mb-6 text-gray-600">
+              <p className="text-lg font-semibold">
+                Found <span className="text-amber-600">{filteredOils.length}</span> oils
+                {searchTerm && ` matching "${searchTerm}"`}
+              </p>
+            </div>
+
+            {/* Oils Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {filteredOils.map((oil, index) => (
+                <OilCard
+                  key={index}
+                  oil={oil}
+                  isComparing={comparisonMode}
+                  isSelected={compareList.some(item => item.name === oil.name)}
+                  onCompareToggle={toggleCompare}
+                />
+              ))}
+            </div>
+
+            {filteredOils.length === 0 && (
+              <div className="text-center py-16">
+                <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-600 mb-2">No oils found</h3>
+                <p className="text-gray-500">Try adjusting your search or filters</p>
+              </div>
             )}
           </div>
         </div>
-
-        {/* Comparison View */}
-        {comparisonMode && compareList.length > 0 && (
-          <ComparisonView oils={compareList} />
-        )}
-
-        {/* Results Info */}
-        <div className="mb-6 text-gray-600">
-          <p className="text-lg font-semibold">
-            Found <span className="text-amber-600">{filteredOils.length}</span> oils
-            {searchTerm && ` matching "${searchTerm}"`}
-          </p>
-        </div>
-
-        {/* Oils Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredOils.map((oil, index) => (
-            <OilCard
-              key={index}
-              oil={oil}
-              isComparing={comparisonMode}
-              isSelected={compareList.some(item => item.name === oil.name)}
-              onCompareToggle={toggleCompare}
-            />
-          ))}
-        </div>
-
-        {filteredOils.length === 0 && (
-          <div className="text-center py-16">
-            <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-gray-600 mb-2">No oils found</h3>
-            <p className="text-gray-500">Try adjusting your search or filters</p>
-          </div>
-        )}
       </main>
 
       {/* Footer */}
@@ -220,3 +239,4 @@ export default function App() {
     </div>
   );
 }
+
