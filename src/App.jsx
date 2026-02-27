@@ -134,7 +134,7 @@ export default function App() {
             {[
               { id: 'oils', label: 'Essential Oils (72)', icon: Droplet },
               { id: 'formulas', label: 'Formulas (9)', icon: Beaker },
-              { id: 'molecules', label: `Molecules (${moleculeCount})`, icon: Atom },
+              { id: 'molecules', label: 'Molecules (105)', icon: Atom },
               { id: 'builder', label: 'Formula Builder', icon: Lightbulb },
               { id: 'synthesis', label: 'Synthesis', icon: FlaskConical },
               { id: 'analytics', label: 'Analytics', icon: BarChart3 },
