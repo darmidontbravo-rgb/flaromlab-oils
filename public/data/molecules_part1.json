@@ -6,7 +6,7 @@
       "cas": "121-33-5",
       "inci": "Vanillin",
       "category": "Spicy",
-      "odor": "Sweet warm vanilla",
+      "odor": "Sweet, warm vanilla",
       "synthesis": "Guaiacol + Glyoxal",
       "fema_gras": "Yes",
       "price_usd_per_kg": 25
@@ -15,57 +15,266 @@
       "id": "MOL-002",
       "name": "Ethyl Vanillin",
       "cas": "121-32-4",
+      "inci": "Ethyl Vanillin",
       "category": "Spicy",
-      "odor": "Strong vanilla"
+      "odor": "Strong vanilla",
+      "synthesis": "Vanillin + Ethyl reaction",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 35
     },
     {
       "id": "MOL-003",
       "name": "Coumarin",
       "cas": "91-64-5",
-      "category": "Spicy"
+      "inci": "Coumarin",
+      "category": "Spicy",
+      "odor": "Sweet, woody vanilla",
+      "synthesis": "Salicylaldehyde + acetone",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 45
     },
     {
       "id": "MOL-004",
       "name": "Cinnamic Aldehyde",
       "cas": "104-55-2",
-      "category": "Spicy"
+      "inci": "Cinnamic Aldehyde",
+      "category": "Spicy",
+      "odor": "Warm cinnamon",
+      "synthesis": "Benzene + acrolein",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 30
     },
     {
       "id": "MOL-005",
       "name": "Anethole",
       "cas": "104-46-1",
-      "category": "Spicy"
+      "inci": "Anethole",
+      "category": "Spicy",
+      "odor": "Licorice, anise",
+      "synthesis": "Estragole oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 28
     },
     {
       "id": "MOL-006",
       "name": "Safrole",
       "cas": "94-59-7",
-      "category": "Spicy"
+      "inci": "Safrole",
+      "category": "Spicy",
+      "odor": "Sassafras, warm",
+      "synthesis": "Piperonal + acetone",
+      "fema_gras": "Restricted",
+      "price_usd_per_kg": 50
     },
     {
       "id": "MOL-007",
       "name": "Eugenol",
       "cas": "97-53-0",
-      "category": "Spicy"
+      "inci": "Eugenol",
+      "category": "Spicy",
+      "odor": "Clove, warm spicy",
+      "synthesis": "Guaiacol + allyl bromide",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 32
     },
     {
       "id": "MOL-008",
       "name": "Geraniol",
       "cas": "106-24-1",
-      "category": "Floral"
+      "inci": "Geraniol",
+      "category": "Floral",
+      "odor": "Rose, floral",
+      "synthesis": "Linalool isomerization",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 40
     },
     {
       "id": "MOL-009",
       "name": "Linalool",
       "cas": "78-70-6",
-      "category": "Floral"
+      "inci": "Linalool",
+      "category": "Floral",
+      "odor": "Lavender, floral",
+      "synthesis": "Isoprene + acetic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 38
     },
     {
       "id": "MOL-010",
       "name": "2-Phenylethyl Acetate",
       "cas": "103-45-7",
-      "category": "Floral"
+      "inci": "2-Phenylethyl Acetate",
+      "category": "Floral",
+      "odor": "Rose, floral sweet",
+      "synthesis": "Phenethyl alcohol + acetic anhydride",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 42
+    },
+    {
+      "id": "MOL-011",
+      "name": "Rose Oxide",
+      "cas": "16409-43-1",
+      "inci": "Rose Oxide",
+      "category": "Floral",
+      "odor": "Rose, clean",
+      "synthesis": "Geraniol cyclization",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 55
+    },
+    {
+      "id": "MOL-012",
+      "name": "Indole",
+      "cas": "120-72-9",
+      "inci": "Indole",
+      "category": "Floral",
+      "odor": "Fecal, animalic, faint floral",
+      "synthesis": "Phenylacetaldehyde + ammonia",
+      "fema_gras": "Yes (trace only)",
+      "price_usd_per_kg": 80
+    },
+    {
+      "id": "MOL-013",
+      "name": "Heliotropin",
+      "cas": "120-40-1",
+      "inci": "Heliotropin",
+      "category": "Floral",
+      "odor": "Sweet almond, heliotrope",
+      "synthesis": "Piperonal reduction",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 60
+    },
+    {
+      "id": "MOL-014",
+      "name": "Anisyl Alcohol",
+      "cas": "105-13-5",
+      "inci": "Anisyl Alcohol",
+      "category": "Floral",
+      "odor": "Anise, floral",
+      "synthesis": "Anethole + water",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 35
+    },
+    {
+      "id": "MOL-015",
+      "name": "Citronellol",
+      "cas": "106-22-9",
+      "inci": "Citronellol",
+      "category": "Floral",
+      "odor": "Rose, citrus",
+      "synthesis": "Citral + H2",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 38
+    },
+    {
+      "id": "MOL-016",
+      "name": "Ethyl Butyrate",
+      "cas": "105-54-4",
+      "inci": "Ethyl Butyrate",
+      "category": "Fruity",
+      "odor": "Fruity, pineapple",
+      "synthesis": "Ethanol + butyric acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 15
+    },
+    {
+      "id": "MOL-017",
+      "name": "Isoamyl Acetate",
+      "cas": "123-92-2",
+      "inci": "Isoamyl Acetate",
+      "category": "Fruity",
+      "odor": "Banana, fruity",
+      "synthesis": "Isoamyl alcohol + acetic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 18
+    },
+    {
+      "id": "MOL-018",
+      "name": "Ethyl Isobutyrate",
+      "cas": "97-62-1",
+      "inci": "Ethyl Isobutyrate",
+      "category": "Fruity",
+      "odor": "Strawberry, fruity",
+      "synthesis": "Ethanol + isobutyric acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 16
+    },
+    {
+      "id": "MOL-019",
+      "name": "Hexyl Acetate",
+      "cas": "142-92-7",
+      "inci": "Hexyl Acetate",
+      "category": "Fruity",
+      "odor": "Green apple, fruity",
+      "synthesis": "Hexanol + acetic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 14
+    },
+    {
+      "id": "MOL-020",
+      "name": "Benzyl Acetate",
+      "cas": "140-11-4",
+      "inci": "Benzyl Acetate",
+      "category": "Fruity",
+      "odor": "Fruity, peach",
+      "synthesis": "Benzyl alcohol + acetic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 20
+    },
+    {
+      "id": "MOL-021",
+      "name": "Ethyl 2-Methylbutyrate",
+      "cas": "7452-79-1",
+      "inci": "Ethyl 2-Methylbutyrate",
+      "category": "Fruity",
+      "odor": "Fruity, apple",
+      "synthesis": "Ethanol + 2-methylbutyric acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 17
+    },
+    {
+      "id": "MOL-022",
+      "name": "Allyl Hexanoate",
+      "cas": "123-68-2",
+      "inci": "Allyl Hexanoate",
+      "category": "Fruity",
+      "odor": "Fruity, pineapple",
+      "synthesis": "Allyl alcohol + hexanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 22
+    },
+    {
+      "id": "MOL-023",
+      "name": "Methyl Anthranilate",
+      "cas": "134-20-3",
+      "inci": "Methyl Anthranilate",
+      "category": "Fruity",
+      "odor": "Grape, fruity",
+      "synthesis": "Anthranilic acid + methanol",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 25
+    },
+    {
+      "id": "MOL-024",
+      "name": "Ethyl Tiglate",
+      "cas": "5837-78-5",
+      "inci": "Ethyl Tiglate",
+      "category": "Fruity",
+      "odor": "Fruity, berry",
+      "synthesis": "Ethanol + tiglic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 19
+    },
+    {
+      "id": "MOL-025",
+      "name": "Butyric Acid",
+      "cas": "107-92-6",
+      "inci": "Butyric Acid",
+      "category": "Fruity",
+      "odor": "Cheesy, fruity",
+      "synthesis": "Bacterial fermentation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 8
     }
   ],
-  "total": 10
+  "total": 25
 }
