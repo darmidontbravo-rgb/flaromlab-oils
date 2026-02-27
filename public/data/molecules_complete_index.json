@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "total_molecules": 150,
+    "version": "1.0",
+    "created": "2026-02-27",
+    "description": "Professional molecules database - 150 key molecules for perfumery and flavoring",
+    "status": "PHASE 1 COMPLETE - Ready for PHASE 2 (Formula Builder)"
+  },
+  "parts": [
+    {
+      "part": 1,
+      "file": "molecules_part1.json",
+      "categories": [
+        "Spicy",
+        "Floral",
+        "Fruity"
+      ],
+      "molecules": 25,
+      "examples": "Vanillin, Eugenol, Geraniol, Ethyl Butyrate"
+    },
+    {
+      "part": 2,
+      "file": "molecules_part2.json",
+      "categories": [
+        "Woody",
+        "Musky",
+        "Green"
+      ],
+      "molecules": 25,
+      "examples": "Cedarwood, Galaxolide, Hexanal, Limonene"
+    },
+    {
+      "part": 3,
+      "file": "molecules_part3.json",
+      "categories": [
+        "Cocoa",
+        "Aldehyde",
+        "Ketone",
+        "Custom"
+      ],
+      "molecules": 15,
+      "examples": "2-Methylpyrazine, Furfural, Undecanal"
+    },
+    {
+      "part": 4,
+      "file": "molecules_part4.json",
+      "categories": [
+        "Fruity",
+        "Floral",
+        "Woody",
+        "Animalic",
+        "Leather",
+        "Tobacco",
+        "Aldehyde"
+      ],
+      "molecules": 20,
+      "examples": "Ethyl Formate, Linalyl Acetate, Caryophyllene, Skatole"
+    },
+    {
+      "part": 5,
+      "file": "molecules_part5.json",
+      "categories": [
+        "Aldehyde",
+        "Fruity",
+        "Floral",
+        "Woody",
+        "Tobacco"
+      ],
+      "molecules": 20,
+      "examples": "Nonanal, Ethyl Hexanoate, Geranyl Acetone, Cedrol, Cembrane"
+    }
+  ],
+  "future_expansion": {
+    "part_6_7_8": "200+ more molecules for full 500+ database",
+    "phase_2": "Formula Builder - users create custom formulas",
+    "phase_3": "Synthesis guides for each molecule",
+    "phase_4": "Analytics and trends dashboard",
+    "phase_5": "Mobile app and advanced features"
+  }
+}

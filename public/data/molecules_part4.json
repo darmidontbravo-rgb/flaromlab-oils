@@ -1,0 +1,206 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-056",
+      "name": "Ethyl Formate",
+      "cas": "109-94-4",
+      "category": "Fruity",
+      "odor": "Fruity rum",
+      "synthesis": "Ethanol + formic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 12
+    },
+    {
+      "id": "MOL-057",
+      "name": "Ethyl Propionate",
+      "cas": "105-37-3",
+      "category": "Fruity",
+      "odor": "Fruity pear",
+      "synthesis": "Ethanol + propionic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 13
+    },
+    {
+      "id": "MOL-058",
+      "name": "Isoamyl Formate",
+      "cas": "110-45-2",
+      "category": "Fruity",
+      "odor": "Fruity apple",
+      "synthesis": "Isoamyl alcohol + formic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 14
+    },
+    {
+      "id": "MOL-059",
+      "name": "Linalyl Acetate",
+      "cas": "115-95-7",
+      "category": "Floral",
+      "odor": "Lavender floral",
+      "synthesis": "Linalool + acetic anhydride",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 44
+    },
+    {
+      "id": "MOL-060",
+      "name": "Geranyl Formate",
+      "cas": "105-86-2",
+      "category": "Floral",
+      "odor": "Rose floral",
+      "synthesis": "Geraniol + formic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 46
+    },
+    {
+      "id": "MOL-061",
+      "name": "Citronellyl Formate",
+      "cas": "105-85-1",
+      "category": "Floral",
+      "odor": "Rose citronella",
+      "synthesis": "Citronellol + formic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 40
+    },
+    {
+      "id": "MOL-062",
+      "name": "Methyl Salicylate",
+      "cas": "119-36-8",
+      "category": "Fruity",
+      "odor": "Minty fruity",
+      "synthesis": "Salicylic acid + methanol",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 15
+    },
+    {
+      "id": "MOL-063",
+      "name": "Ethyl Lactate",
+      "cas": "97-64-3",
+      "category": "Fruity",
+      "odor": "Creamy fruity",
+      "synthesis": "Lactic acid + ethanol",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 16
+    },
+    {
+      "id": "MOL-064",
+      "name": "Caryophyllene",
+      "cas": "87-44-5",
+      "category": "Woody",
+      "odor": "Spicy woody pepper",
+      "synthesis": "Isoprene derivatization",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 35
+    },
+    {
+      "id": "MOL-065",
+      "name": "Myrcene",
+      "cas": "123-35-3",
+      "category": "Green",
+      "odor": "Herbal piney",
+      "synthesis": "Isoprene coupling",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 22
+    },
+    {
+      "id": "MOL-066",
+      "name": "Ocimene",
+      "cas": "29714-87-2",
+      "category": "Green",
+      "odor": "Herbal fresh",
+      "synthesis": "Myrcene isomerization",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 24
+    },
+    {
+      "id": "MOL-067",
+      "name": "Patchoulol",
+      "cas": "5986-55-0",
+      "category": "Woody",
+      "odor": "Earthy patchouli",
+      "synthesis": "Patchouli oil extraction",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 32
+    },
+    {
+      "id": "MOL-068",
+      "name": "Benzyl Benzoate",
+      "cas": "120-51-4",
+      "category": "Woody",
+      "odor": "Balsamic sweet",
+      "synthesis": "Benzyl alcohol + benzoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 28
+    },
+    {
+      "id": "MOL-069",
+      "name": "Skatole",
+      "cas": "83-34-1",
+      "category": "Animalic",
+      "odor": "Fecal animalic",
+      "synthesis": "Indole methylation",
+      "fema_gras": "Restricted (trace)",
+      "price_usd_per_kg": 120
+    },
+    {
+      "id": "MOL-070",
+      "name": "Birch Tar",
+      "cas": "8002-26-4",
+      "category": "Leather",
+      "odor": "Leathery smoky",
+      "synthesis": "Birch wood distillation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 45
+    },
+    {
+      "id": "MOL-071",
+      "name": "Cade Oil",
+      "cas": "8015-84-3",
+      "category": "Leather",
+      "odor": "Smoky leather",
+      "synthesis": "Juniper wood distillation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 52
+    },
+    {
+      "id": "MOL-072",
+      "name": "Solanone",
+      "cas": "16148-89-5",
+      "category": "Tobacco",
+      "odor": "Tobacco woody",
+      "synthesis": "Ionone derivative",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 85
+    },
+    {
+      "id": "MOL-073",
+      "name": "Undecanal",
+      "cas": "112-44-7",
+      "category": "Aldehyde",
+      "odor": "Fatty aldehydic",
+      "synthesis": "Undecane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 18
+    },
+    {
+      "id": "MOL-074",
+      "name": "Tridecanal",
+      "cas": "10486-19-8",
+      "category": "Aldehyde",
+      "odor": "Waxy aldehydic",
+      "synthesis": "Tridecane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 22
+    },
+    {
+      "id": "MOL-075",
+      "name": "Pentadecanal",
+      "cas": "629-76-5",
+      "category": "Aldehyde",
+      "odor": "Fatty waxy",
+      "synthesis": "Pentadecane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 26
+    }
+  ],
+  "total": 20,
+  "category": "Part 4"
+}

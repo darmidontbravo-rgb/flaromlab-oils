@@ -1,0 +1,206 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-076",
+      "name": "Hexanoic Aldehyde",
+      "cas": "66-25-1",
+      "category": "Aldehyde",
+      "odor": "Fresh green",
+      "synthesis": "Hexane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 12
+    },
+    {
+      "id": "MOL-077",
+      "name": "Heptanal",
+      "cas": "111-71-7",
+      "category": "Aldehyde",
+      "odor": "Fatty aldehydic",
+      "synthesis": "Heptane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 14
+    },
+    {
+      "id": "MOL-078",
+      "name": "Octanoic Aldehyde",
+      "cas": "124-13-0",
+      "category": "Aldehyde",
+      "odor": "Citrus aldehydic",
+      "synthesis": "Octane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 16
+    },
+    {
+      "id": "MOL-079",
+      "name": "Nonanal",
+      "cas": "124-19-6",
+      "category": "Aldehyde",
+      "odor": "Fatty citrus",
+      "synthesis": "Nonane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 17
+    },
+    {
+      "id": "MOL-080",
+      "name": "Decanal",
+      "cas": "112-31-2",
+      "category": "Aldehyde",
+      "odor": "Sweet aldehydic",
+      "synthesis": "Decane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 18
+    },
+    {
+      "id": "MOL-081",
+      "name": "Iso-A10 Aldehyde",
+      "cas": "110-41-8",
+      "category": "Aldehyde",
+      "odor": "Rose aldehydic",
+      "synthesis": "Isoalkane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 20
+    },
+    {
+      "id": "MOL-082",
+      "name": "Iso-A12 Aldehyde",
+      "cas": "112-50-5",
+      "category": "Aldehyde",
+      "odor": "Sweet rose",
+      "synthesis": "Isoalkane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 22
+    },
+    {
+      "id": "MOL-083",
+      "name": "Iso-A14 Aldehyde",
+      "cas": "112-72-1",
+      "category": "Aldehyde",
+      "odor": "Creamy rose",
+      "synthesis": "Isoalkane oxidation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 24
+    },
+    {
+      "id": "MOL-084",
+      "name": "Ethyl Hexanoate",
+      "cas": "763-15-5",
+      "category": "Fruity",
+      "odor": "Fruity pineapple",
+      "synthesis": "Ethanol + hexanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 14
+    },
+    {
+      "id": "MOL-085",
+      "name": "Ethyl Octanoate",
+      "cas": "106-32-1",
+      "category": "Fruity",
+      "odor": "Fruity apricot",
+      "synthesis": "Ethanol + octanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 16
+    },
+    {
+      "id": "MOL-086",
+      "name": "Ethyl Decanoate",
+      "cas": "110-38-3",
+      "category": "Fruity",
+      "odor": "Fruity creamy",
+      "synthesis": "Ethanol + decanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 18
+    },
+    {
+      "id": "MOL-087",
+      "name": "Isoamyl Hexanoate",
+      "cas": "2198-61-0",
+      "category": "Fruity",
+      "odor": "Fruity tropical",
+      "synthesis": "Isoamyl alcohol + hexanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 16
+    },
+    {
+      "id": "MOL-088",
+      "name": "Hexyl Hexanoate",
+      "cas": "6378-65-0",
+      "category": "Fruity",
+      "odor": "Fruity waxy",
+      "synthesis": "Hexanol + hexanoic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 18
+    },
+    {
+      "id": "MOL-089",
+      "name": "Phenyl Ethyl Formate",
+      "cas": "104-63-2",
+      "category": "Floral",
+      "odor": "Rose fruity",
+      "synthesis": "Phenethyl alcohol + formic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 22
+    },
+    {
+      "id": "MOL-090",
+      "name": "Phenyl Ethyl Propionate",
+      "cas": "122-70-3",
+      "category": "Floral",
+      "odor": "Rose fruity creamy",
+      "synthesis": "Phenethyl alcohol + propionic acid",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 24
+    },
+    {
+      "id": "MOL-091",
+      "name": "Geranyl Acetone",
+      "cas": "3796-70-1",
+      "category": "Floral",
+      "odor": "Rose ketone",
+      "synthesis": "Geraniol + acetone",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 32
+    },
+    {
+      "id": "MOL-092",
+      "name": "Cedrol",
+      "cas": "77-53-2",
+      "category": "Woody",
+      "odor": "Cedary woody",
+      "synthesis": "Cedarwood distillation",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 38
+    },
+    {
+      "id": "MOL-093",
+      "name": "Alpha Cedrene",
+      "cas": "469-61-4",
+      "category": "Woody",
+      "odor": "Woody cedar",
+      "synthesis": "Cedarwood component",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 36
+    },
+    {
+      "id": "MOL-094",
+      "name": "Thujopsene",
+      "cas": "123-35-3",
+      "category": "Woody",
+      "odor": "Woody cedarish",
+      "synthesis": "Thuja oil extraction",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 40
+    },
+    {
+      "id": "MOL-095",
+      "name": "Cembrane",
+      "cas": "17066-67-0",
+      "category": "Tobacco",
+      "odor": "Tobacco woody",
+      "synthesis": "Tobacco leaf component",
+      "fema_gras": "Yes",
+      "price_usd_per_kg": 90
+    }
+  ],
+  "total": 20,
+  "category": "Part 5"
+}
