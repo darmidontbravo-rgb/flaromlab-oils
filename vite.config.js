@@ -4,22 +4,23 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
   server: {
     port: 3000,
     strictPort: false,
-    open: true,
-    fs: {
-      allow: ['..']
-    }
+    open: true
   },
   build: {
     outDir: 'dist',
-    sourcemap: true
-  },
-  resolve: {
-    alias: {
-      '@': '/src'
+    sourcemap: false,
+    rollupOptions: {
+      input: path.resolve(__dirname, 'index.html')
     }
   },
-  publicDir: 'public'
+  publicDir: 'public',
+  root: '.'
 })

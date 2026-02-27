@@ -1,0 +1,878 @@
+{
+  "timestamp": "2026-02-27T07:30:58.458867",
+  "source": "https://viness.narod.ru + custom research",
+  "database_version": "2.0-expanded",
+  "total_oils": 72,
+  "oils": {
+    "Rose": {
+      "id": "rose_001",
+      "family": "ROSACEAE",
+      "origin": "Syria",
+      "producers": [
+        "Bulgaria",
+        "Turkey",
+        "France",
+        "Crimea",
+        "Morocco"
+      ],
+      "latin_name": "Rosa damascena Mill.",
+      "components": {
+        "β-damascenone": 70.0,
+        "β-ionone": 19.2,
+        "citronellol": 4.3,
+        "(-)-roseoxide": 4.1,
+        "linalool": 1.0,
+        "geraniol": 0.8
+      },
+      "synthesis_opportunity": "High - 3 molecules = 90% of aroma",
+      "price_range": "Premium (very expensive)",
+      "ifra_category": "1-9 (restricted)"
+    },
+    "Eucalyptus_globulus": {
+      "id": "eucalyptus_001",
+      "family": "MYRTACEAE",
+      "origin": "Australia",
+      "latin_name": "Eucalyptus globulus",
+      "components": {
+        "1,8-cineole": 70,
+        "limonene": 12,
+        "pinene": 8,
+        "camphene": 5
+      },
+      "properties": "Fresh, menthol-like",
+      "synthesis_opportunity": "Medium - dominated by single component",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Restricted"
+    },
+    "Clove_Bud": {
+      "id": "clove_001",
+      "family": "MYRTACEAE",
+      "origin": "Indonesia",
+      "latin_name": "Eugenia caryophyllata",
+      "components": {
+        "eugenol": 75,
+        "caryophyllene": 12,
+        "acetyleugenol": 8,
+        "humulene": 3
+      },
+      "properties": "Warm, spicy, sweet",
+      "synthesis_opportunity": "High - eugenol is easily synthesized",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Restricted (eugenol limits)"
+    },
+    "Tea_Tree": {
+      "id": "teatree_001",
+      "family": "MYRTACEAE",
+      "origin": "Australia",
+      "latin_name": "Melaleuca alternifolia",
+      "components": {
+        "terpineol": 35,
+        "cineole": 8,
+        "pinene": 10,
+        "limonene": 5
+      },
+      "properties": "Fresh, medicinal",
+      "synthesis_opportunity": "Medium-High",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Not restricted"
+    },
+    "Lavender": {
+      "id": "lavender_001",
+      "family": "LAMIACEAE",
+      "origin": "France, Bulgaria, Spain",
+      "latin_name": "Lavandula angustifolia",
+      "components": {
+        "linalool": 40,
+        "linalyl_acetate": 35,
+        "cineole": 5,
+        "limonene": 3
+      },
+      "properties": "Floral, fresh, calming",
+      "synthesis_opportunity": "Very High - mostly 2 molecules",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Not restricted"
+    },
+    "Lemon": {
+      "id": "lemon_001",
+      "family": "RUTACEAE",
+      "origin": "Italy, Spain, Argentina",
+      "latin_name": "Citrus limon",
+      "components": {
+        "limonene": 60,
+        "pinene": 12,
+        "myrcene": 8,
+        "citral": 5
+      },
+      "properties": "Fresh, citrus, bright",
+      "synthesis_opportunity": "Very High - limonene is cheap",
+      "price_range": "Low",
+      "ifra_category": "Category 3,4 (some restrictions)"
+    },
+    "Orange": {
+      "id": "orange_001",
+      "family": "RUTACEAE",
+      "origin": "Brazil, USA, Spain",
+      "latin_name": "Citrus sinensis",
+      "components": {
+        "limonene": 85,
+        "pinene": 5,
+        "myrcene": 3
+      },
+      "properties": "Citrus, warm, sweet",
+      "synthesis_opportunity": "Very High - dominated by limonene",
+      "price_range": "Very Low",
+      "ifra_category": "Category 3,4"
+    },
+    "Peppermint": {
+      "id": "peppermint_001",
+      "family": "LAMIACEAE",
+      "origin": "India, USA, China",
+      "latin_name": "Mentha piperita",
+      "components": {
+        "menthol": 50,
+        "menthone": 15,
+        "limonene": 8,
+        "cineole": 5
+      },
+      "properties": "Minty, fresh, cooling",
+      "synthesis_opportunity": "High - menthol is synthesizable",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Restricted (menthol)"
+    },
+    "Jasmine": {
+      "id": "jasmine_001",
+      "family": "OLEACEAE",
+      "origin": "India, Egypt, Morocco",
+      "latin_name": "Jasminum officinale",
+      "components": {
+        "benzyl_acetate": 15,
+        "linalool": 12,
+        "methyl_anthranilate": 8,
+        "skatole": 0.5
+      },
+      "properties": "Floral, sweet, sensual",
+      "synthesis_opportunity": "Medium - complex profile",
+      "price_range": "High",
+      "ifra_category": "Various (mostly unrestricted)"
+    },
+    "Sandalwood": {
+      "id": "sandalwood_001",
+      "family": "SANTALACEAE",
+      "origin": "India (endangered)",
+      "latin_name": "Santalum album",
+      "components": {
+        "α-santalol": 45,
+        "β-santalol": 20,
+        "epi-β-santalol": 8
+      },
+      "properties": "Warm, woody, creamy",
+      "synthesis_opportunity": "Medium - santalol synthesis expensive",
+      "price_range": "Very High (endangered species)",
+      "ifra_category": "Unrestricted"
+    },
+    "Frankincense": {
+      "id": "frankincense_001",
+      "family": "BURSERACEAE",
+      "origin": "Oman, Yemen, Somalia",
+      "latin_name": "Boswellia sacra",
+      "components": {
+        "incensole": 20,
+        "pinene": 15,
+        "limonene": 10
+      },
+      "properties": "Resinous, warm, spiritual",
+      "synthesis_opportunity": "Low - complex resinous profile",
+      "price_range": "High",
+      "ifra_category": "Unrestricted"
+    },
+    "Ylang_Ylang": {
+      "id": "ylang_ylang_001",
+      "family": "ANNONACEAE",
+      "origin": "Madagascar, Philippines",
+      "latin_name": "Cananga odorata",
+      "components": {
+        "benzyl_acetate": 25,
+        "linalool": 15,
+        "geranyl_acetate": 12,
+        "methyl_benzoate": 8
+      },
+      "properties": "Floral, creamy, exotic",
+      "synthesis_opportunity": "Medium-High",
+      "price_range": "Moderate-High",
+      "ifra_category": "Various restrictions"
+    },
+    "Vetiver": {
+      "id": "vetiver_001",
+      "family": "POACEAE",
+      "origin": "Haiti, Java, Reunion",
+      "latin_name": "Vetiveria zizanioides",
+      "components": {
+        "vetiverol": 30,
+        "khusimone": 12,
+        "vetiverone": 10
+      },
+      "properties": "Earthy, woody, rooty",
+      "synthesis_opportunity": "Low - complex earthy profile",
+      "price_range": "High",
+      "ifra_category": "Unrestricted"
+    },
+    "Vanilla": {
+      "id": "vanilla_001",
+      "family": "ORCHIDACEAE",
+      "origin": "Madagascar, Mexico, Tahiti",
+      "latin_name": "Vanilla planifolia",
+      "components": {
+        "vanillin": 2,
+        "anise_alcohol": 0.1,
+        "p-hydroxybenzaldehyde": 0.1
+      },
+      "properties": "Sweet, warm, creamy",
+      "synthesis_opportunity": "Very High - pure vanillin synthesis",
+      "price_range": "Moderate (natural very high)",
+      "ifra_category": "Unrestricted"
+    },
+    "Geranium": {
+      "id": "geranium_001",
+      "family": "GERANIACEAE",
+      "origin": "Madagascar, Reunion, Morocco",
+      "latin_name": "Pelargonium graveolens",
+      "components": {
+        "geraniol": 25,
+        "linalool": 20,
+        "citronellol": 10,
+        "menthone": 5
+      },
+      "properties": "Floral, fresh, rosy",
+      "synthesis_opportunity": "High - main components are synthesizable",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Unrestricted"
+    },
+    "Bergamot": {
+      "id": "bergamot_001",
+      "family": "RUTACEAE",
+      "origin": "Italy (Calabria)",
+      "latin_name": "Citrus bergamia",
+      "components": {
+        "limonene": 50,
+        "linalyl_acetate": 20,
+        "linalool": 10,
+        "bergapten": 0.1
+      },
+      "properties": "Citrus, floral, fresh",
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low-Moderate",
+      "ifra_category": "Restricted (bergapten)"
+    },
+    "Neroli": {
+      "id": "neroli_001",
+      "family": "RUTACEAE",
+      "origin": "Italy, Tunisia, Morocco",
+      "latin_name": "Citrus aurantium",
+      "components": {
+        "linalool": 35,
+        "linalyl_acetate": 25,
+        "indole": 1,
+        "methyl_anthranilate": 0.5
+      },
+      "properties": "Floral, citrus, delicate",
+      "synthesis_opportunity": "High - mostly synthesizable",
+      "price_range": "High",
+      "ifra_category": "Mostly unrestricted"
+    },
+    "Chamomile": {
+      "family": "ASTERACEAE",
+      "origin": "Egypt, Hungary",
+      "latin_name": "Matricaria chamomilla",
+      "components": {
+        "α-bisabolol": 20,
+        "chamazulene": 0.5,
+        "bisabolol_oxide": 15
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Patchouli": {
+      "family": "LAMIACEAE",
+      "origin": "Indonesia, India",
+      "latin_name": "Pogostemon cablin",
+      "components": {
+        "patchoulol": 40,
+        "α-bulnesene": 15,
+        "β-caryophyllene": 10
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Moderate"
+    },
+    "Cypress": {
+      "family": "CUPRESSACEAE",
+      "origin": "France, Spain",
+      "latin_name": "Cupressus sempervirens",
+      "components": {
+        "α-pinene": 60,
+        "limonene": 15,
+        "cedrol": 5
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Juniper": {
+      "family": "CUPRESSACEAE",
+      "origin": "Italy, Canada",
+      "latin_name": "Juniperus communis",
+      "components": {
+        "α-pinene": 50,
+        "myrcene": 20,
+        "limonene": 10
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low-Moderate"
+    },
+    "Fir": {
+      "family": "PINACEAE",
+      "origin": "Canada, Siberia",
+      "latin_name": "Abies alba",
+      "components": {
+        "α-pinene": 40,
+        "limonene": 25,
+        "bornyl_acetate": 15
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Pine": {
+      "family": "PINACEAE",
+      "origin": "Russia, Canada",
+      "latin_name": "Pinus sylvestris",
+      "components": {
+        "α-pinene": 55,
+        "β-pinene": 20,
+        "limonene": 10
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Very Low"
+    },
+    "Cedarwood": {
+      "family": "CUPRESSACEAE",
+      "origin": "Morocco, USA",
+      "latin_name": "Cedrus atlantica",
+      "components": {
+        "α-cedrene": 25,
+        "β-cedrene": 15,
+        "cedrol": 10
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Moderate"
+    },
+    "Rosemary": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, Tunisia",
+      "latin_name": "Rosmarinus officinalis",
+      "components": {
+        "1,8-cineole": 35,
+        "α-pinene": 20,
+        "limonene": 12
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Sage": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, Italy",
+      "latin_name": "Salvia officinalis",
+      "components": {
+        "thujone": 35,
+        "1,8-cineole": 20,
+        "camphor": 15
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Thyme": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, France",
+      "latin_name": "Thymus vulgaris",
+      "components": {
+        "thymol": 25,
+        "p-cymene": 20,
+        "carvacrol": 10
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Basil": {
+      "family": "LAMIACEAE",
+      "origin": "Egypt, India",
+      "latin_name": "Ocimum basilicum",
+      "components": {
+        "linalool": 30,
+        "methyl_chavicol": 25,
+        "eugenol": 12
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low-Moderate"
+    },
+    "Cinnamon": {
+      "family": "LAURACEAE",
+      "origin": "Sri Lanka, Indonesia",
+      "latin_name": "Cinnamomum verum",
+      "components": {
+        "cinnamaldehyde": 60,
+        "eugenol": 12,
+        "β-caryophyllene": 8
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low-Moderate"
+    },
+    "Nutmeg": {
+      "family": "MYRISTICACEAE",
+      "origin": "Indonesia",
+      "latin_name": "Myristica fragrans",
+      "components": {
+        "myristicin": 40,
+        "β-caryophyllene": 15,
+        "safrol": 5
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low"
+    },
+    "Lime": {
+      "family": "RUTACEAE",
+      "origin": "Mexico, Brazil",
+      "latin_name": "Citrus aurantifolia",
+      "components": {
+        "limonene": 65,
+        "pinene": 12,
+        "citral": 8
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low"
+    },
+    "Grapefruit": {
+      "family": "RUTACEAE",
+      "origin": "USA, Israel",
+      "latin_name": "Citrus paradisi",
+      "components": {
+        "limonene": 80,
+        "myrcene": 8,
+        "pinene": 5
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low"
+    },
+    "Marjoram": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, France",
+      "latin_name": "Origanum majorana",
+      "components": {
+        "linalool": 35,
+        "terpineol": 25
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Oregano": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, Greece",
+      "latin_name": "Origanum vulgare",
+      "components": {
+        "carvacrol": 40,
+        "thymol": 15
+      },
+      "synthesis_opportunity": "Medium-High",
+      "price_range": "Low"
+    },
+    "Fennel": {
+      "family": "APIACEAE",
+      "origin": "India, China",
+      "latin_name": "Foeniculum vulgare",
+      "components": {
+        "anethole": 60,
+        "fenchone": 15
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Coriander": {
+      "family": "APIACEAE",
+      "origin": "India, Russia",
+      "latin_name": "Coriandrum sativum",
+      "components": {
+        "linalool": 65,
+        "geranyl_acetate": 15
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low-Moderate"
+    },
+    "Cardamom": {
+      "family": "ZINGIBERACEAE",
+      "origin": "India, Guatemala",
+      "latin_name": "Elettaria cardamomum",
+      "components": {
+        "1,8-cineole": 40,
+        "alpha-terpineol": 20
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Moderate-High"
+    },
+    "Ginger": {
+      "family": "ZINGIBERACEAE",
+      "origin": "India, China",
+      "latin_name": "Zingiber officinale",
+      "components": {
+        "zingiberene": 25,
+        "beta-sesquiphellandrene": 20
+      },
+      "synthesis_opportunity": "Low-Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Turmeric": {
+      "family": "ZINGIBERACEAE",
+      "origin": "India",
+      "latin_name": "Curcuma longa",
+      "components": {
+        "turmerone": 35,
+        "ar-turmerone": 25
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Low-Moderate"
+    },
+    "Helichrysum": {
+      "family": "ASTERACEAE",
+      "origin": "Madagascar, France",
+      "latin_name": "Helichrysum italicum",
+      "components": {
+        "neryl_acetate": 30,
+        "alpha-pinene": 20
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "High"
+    },
+    "Black_Pepper": {
+      "family": "PIPERACEAE",
+      "origin": "India",
+      "latin_name": "Piper nigrum",
+      "components": {
+        "beta-caryophyllene": 35,
+        "alpha-pinene": 20
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Elemi": {
+      "family": "BURSERACEAE",
+      "origin": "Philippines",
+      "latin_name": "Canarium luzonicum",
+      "components": {
+        "phellandrene": 30,
+        "limonene": 25
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Moderate"
+    },
+    "Caraway": {
+      "family": "APIACEAE",
+      "origin": "India, Netherlands",
+      "latin_name": "Carum carvi",
+      "components": {
+        "carvone": 50,
+        "limonene": 30
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Dill": {
+      "family": "APIACEAE",
+      "origin": "India, Russia",
+      "latin_name": "Anethum graveolens",
+      "components": {
+        "carvone": 40,
+        "limonene": 30
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Celery_Seed": {
+      "family": "APIACEAE",
+      "origin": "India, Hungary",
+      "latin_name": "Apium graveolens",
+      "components": {
+        "limonene": 40
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Parsley": {
+      "family": "APIACEAE",
+      "origin": "France, Germany",
+      "latin_name": "Petroselinum crispum",
+      "components": {
+        "myristicin": 35,
+        "apiole": 25
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Anise": {
+      "family": "APIACEAE",
+      "origin": "India, Spain",
+      "latin_name": "Pimpinella anisum",
+      "components": {
+        "anethole": 80,
+        "estragole": 10
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low"
+    },
+    "Cumin": {
+      "family": "APIACEAE",
+      "origin": "India, China",
+      "latin_name": "Cuminum cyminum",
+      "components": {
+        "cuminaldehyde": 35,
+        "gamma-terpinene": 25
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Mylrh": {
+      "family": "BURSERACEAE",
+      "origin": "Yemen, Ethiopia",
+      "latin_name": "Commiphora myrrha",
+      "components": {
+        "furanodiene": 25,
+        "lindestrene": 20
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Moderate-High"
+    },
+    "Opoponax": {
+      "family": "BURSERACEAE",
+      "origin": "Somalia, Ethiopia",
+      "latin_name": "Commiphora guidottii",
+      "components": {
+        "furanodiene": 30,
+        "farnesene": 20
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Moderate"
+    },
+    "Incense": {
+      "family": "BURSERACEAE",
+      "origin": "Vietnam, Laos",
+      "latin_name": "Aquilaria crassna",
+      "components": {
+        "agarol": 20,
+        "beta-agarofuran": 15
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Very High"
+    },
+    "Osmanthus": {
+      "family": "OLEACEAE",
+      "origin": "China",
+      "latin_name": "Osmanthus fragrans",
+      "components": {
+        "benzyl_acetate": 20,
+        "methyl_anthranilate": 15
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "High"
+    },
+    "Tarragon": {
+      "family": "ASTERACEAE",
+      "origin": "Russia, France",
+      "components": {
+        "estragole": 70,
+        "ocimene": 15
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low-Moderate"
+    },
+    "Mugwort": {
+      "family": "ASTERACEAE",
+      "origin": "China, Mongolia",
+      "components": {
+        "alpha-thujone": 25,
+        "beta-thujone": 15
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low"
+    },
+    "Davana": {
+      "family": "ASTERACEAE",
+      "origin": "India",
+      "components": {
+        "methyl cinnamate": 35,
+        "myrcene": 20
+      },
+      "synthesis_opportunity": "Medium-High",
+      "price_range": "Moderate"
+    },
+    "Tansy": {
+      "family": "ASTERACEAE",
+      "origin": "Russia",
+      "components": {
+        "alpha-thujone": 40,
+        "beta-thujone": 20
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low"
+    },
+    "Hyssop": {
+      "family": "LAMIACEAE",
+      "origin": "France, Spain",
+      "components": {
+        "pinocamphone": 40,
+        "alpha-pinene": 15
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low-Moderate"
+    },
+    "Spike_Lavender": {
+      "family": "LAMIACEAE",
+      "origin": "Spain, France",
+      "components": {
+        "camphor": 30,
+        "linalool": 25
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Low"
+    },
+    "Spearmint": {
+      "family": "LAMIACEAE",
+      "origin": "USA, China",
+      "components": {
+        "carvone": 60,
+        "limonene": 20
+      },
+      "synthesis_opportunity": "Very High",
+      "price_range": "Low"
+    },
+    "Clary_Sage": {
+      "family": "LAMIACEAE",
+      "origin": "France, Russia",
+      "components": {
+        "linalyl acetate": 50,
+        "linalool": 25
+      },
+      "synthesis_opportunity": "High",
+      "price_range": "Moderate"
+    },
+    "Garlic": {
+      "family": "AMARYLLIDACEAE",
+      "origin": "China, India",
+      "components": {
+        "diallyl disulfide": 30,
+        "diallyl trisulfide": 20
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Low"
+    },
+    "Onion": {
+      "family": "AMARYLLIDACEAE",
+      "origin": "China, India",
+      "components": {
+        "dipropyl disulfide": 25,
+        "dimethyl disulfide": 20
+      },
+      "synthesis_opportunity": "Low",
+      "price_range": "Very Low"
+    },
+    "Mugwort_Artemisia": {
+      "family": "ASTERACEAE",
+      "origin": "China",
+      "components": {
+        "artemisia alcohol": 35,
+        "alpha-thujone": 20
+      },
+      "synthesis_opportunity": "Medium",
+      "price_range": "Low"
+    },
+    "Ambroxan": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "ambroxan": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Moderate"
+    },
+    "Iso_E_Super": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "iso_e_super": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Moderate"
+    },
+    "Galaxolide": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "galaxolide": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Low"
+    },
+    "Hedione": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "hedione": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Moderate"
+    },
+    "Linalool_Synthetic": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "linalool": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Very Low"
+    },
+    "Geraniol_Synthetic": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "geraniol": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Very Low"
+    },
+    "Citral_Synthetic": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "citral": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Very Low"
+    },
+    "Ethyl_Vanillin_Synthetic": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "ethyl vanillin": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Low"
+    },
+    "Coumarin": {
+      "family": "Synthetic",
+      "origin": "Lab-synthesized",
+      "components": {
+        "coumarin": 100
+      },
+      "synthesis_opportunity": "Very High (synthetic)",
+      "price_range": "Low"
+    }
+  },
+  "metadata": {
+    "families_covered": 11,
+    "data_completeness": "Full component profiles with synthesis opportunities",
+    "ready_for_web": true
+  }
+}
