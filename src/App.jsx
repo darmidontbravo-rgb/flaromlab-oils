@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Filter, Droplet, Zap, DollarSign, Beaker } from 'lucide-react';
+import { Search, Filter, Droplet, Zap, DollarSign, Beaker, Atom } from 'lucide-react';
 import SearchComponent from './components/Search';
 import OilCard from './components/OilCard';
 import ComparisonView from './components/ComparisonView';
 import FilterPanel from './components/FilterPanel';
 import FormulasPage from './components/FormulasPage';
+import MoleculesPage from './components/MoleculesPage';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('oils');
@@ -113,6 +114,17 @@ export default function App() {
               <Beaker className="w-4 h-4" />
               Formulas (9)
             </button>
+            <button
+              onClick={() => setActiveTab('molecules')}
+              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
+                activeTab === 'molecules'
+                  ? 'bg-white text-purple-600'
+                  : 'text-amber-100 hover:text-white'
+              }`}
+            >
+              <Atom className="w-4 h-4" />
+              Molecules (150+)
+            </button>
           </div>
         </div>
       </header>
@@ -193,9 +205,12 @@ export default function App() {
               )}
             </div>
           </div>
-        ) : (
+        ) : activeTab === 'formulas' ? (
           // FORMULAS TAB
           <FormulasPage />
+        ) : (
+          // MOLECULES TAB
+          <MoleculesPage />
         )}
       </main>
 
