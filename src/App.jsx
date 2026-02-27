@@ -21,6 +21,7 @@ export default function App() {
   const [comparisonMode, setComparisonMode] = useState(false);
   const [compareList, setCompareList] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [moleculeCount, setMoleculeCount] = useState(0);
 
   useEffect(() => {
     const loadOils = async () => {
@@ -40,6 +41,41 @@ export default function App() {
       }
     };
     loadOils();
+  }, []);
+
+  useEffect(() => {
+    const countMolecules = async () => {
+      try {
+        let totalMols = 0;
+        const fileNames = [
+          'molecules_part1.json',
+          'molecules_part2.json',
+          'molecules_part3.json',
+          'molecules_part4_expanded.json',
+          'molecules_part5_expanded.json',
+          'molecules_part6_expanded.json',
+          'molecules_part7_expanded.json'
+        ];
+        
+        for (const fileName of fileNames) {
+          try {
+            const response = await fetch(`/data/${fileName}`);
+            if (response.ok) {
+              const data = await response.json();
+              totalMols += (data.molecules || []).length;
+            }
+          } catch (e) {
+            // Skip missing files
+          }
+        }
+        
+        setMoleculeCount(totalMols);
+      } catch (error) {
+        console.error('Error counting molecules:', error);
+      }
+    };
+    
+    countMolecules();
   }, []);
 
   useEffect(() => {
@@ -98,7 +134,7 @@ export default function App() {
             {[
               { id: 'oils', label: 'Essential Oils (72)', icon: Droplet },
               { id: 'formulas', label: 'Formulas (9)', icon: Beaker },
-              { id: 'molecules', label: 'Molecules (150+)', icon: Atom },
+              { id: 'molecules', label: `Molecules (${moleculeCount})`, icon: Atom },
               { id: 'builder', label: 'Formula Builder', icon: Lightbulb },
               { id: 'synthesis', label: 'Synthesis', icon: FlaskConical },
               { id: 'analytics', label: 'Analytics', icon: BarChart3 },
