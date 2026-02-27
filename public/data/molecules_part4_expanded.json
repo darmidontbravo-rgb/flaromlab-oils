@@ -1,0 +1,283 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-096",
+      "name": "Iso E Super",
+      "cas": "54144-13-3",
+      "inci": "Iso E Super",
+      "category": "Woody",
+      "mw": 244.37,
+      "description": "Synthetic woody polycyclic compound with cedar-like, slightly fruity nuances. Extremely versatile in fine fragrance. Known for excellent tenacity and blending properties. Non-flammable, soluble in most fragrance bases.",
+      "organoleptic": "Woody, cedar, slightly fruity, warm, persistent",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 80,
+        "cosmetics": 15
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Cedarwood",
+        "Geraniol",
+        "Linalool",
+        "Sandalwood"
+      ],
+      "price_usd_per_kg": 185
+    },
+    {
+      "id": "MOL-097",
+      "name": "Hedione",
+      "cas": "23696-85-7",
+      "inci": "Hedione",
+      "category": "Floral",
+      "mw": 206.28,
+      "description": "Aromatic white crystalline compound with jasmine-like floral character. Excellent tenacity and diffusion. Creates transparent floral effect. Widely used in high-end fragrances. UV and heat stable.",
+      "organoleptic": "Jasmine-like, floral, green, fruity undertone",
+      "applications": {
+        "perfumery": 40,
+        "fragrance": 90,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Linalool",
+        "Geraniol",
+        "Rose Oxide",
+        "Citral"
+      ],
+      "price_usd_per_kg": 220
+    },
+    {
+      "id": "MOL-098",
+      "name": "Ambroxan",
+      "cas": "6790-58-5",
+      "inci": "Ambroxan",
+      "category": "Amber",
+      "mw": 234.37,
+      "description": "Synthetic ambergris replacement with warm, musky-woody character. Excellent fixative with very high tenacity. Odorless when alone, creates depth in compositions. Perfect for oriental and amber fragrances.",
+      "organoleptic": "Warm, musky, woody, amber, sensual",
+      "applications": {
+        "perfumery": 35,
+        "fragrance": 85,
+        "cosmetics": 20
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "60 months",
+      "compatibility": [
+        "Opopanax",
+        "Benzoin",
+        "Vanilla",
+        "Sandalwood"
+      ],
+      "price_usd_per_kg": 150
+    },
+    {
+      "id": "MOL-099",
+      "name": "Galaxolide",
+      "cas": "1222-05-5",
+      "inci": "Galaxolide",
+      "category": "Musky",
+      "mw": 258.4,
+      "description": "Polycyclic synthetic musk with soft, clean, powdery character. Excellent fixative with long-lasting effect. Creates clean, laundry-like notes. Widely used in personal care products. Good stability.",
+      "organoleptic": "Clean, soft, musky, powdery, laundry-like",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 70,
+        "cosmetics": 50
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Linalool",
+        "Geraniol",
+        "Benzoin",
+        "Sandalwood"
+      ],
+      "price_usd_per_kg": 95
+    },
+    {
+      "id": "MOL-100",
+      "name": "Ethyl Linalool",
+      "cas": "10375-86-7",
+      "inci": "Ethyl Linalool",
+      "category": "Floral",
+      "mw": 152.24,
+      "description": "Synthetic lilac and flower compound with fresh, green-floral character. Very versatile for creating lilac and violet notes. Excellent diffusion. Stable in various formulations. Used in fragrances and cosmetics.",
+      "organoleptic": "Fresh, green, floral, lilac-like, fruity",
+      "applications": {
+        "perfumery": 30,
+        "fragrance": 75,
+        "cosmetics": 25
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Linalool",
+        "Geraniol",
+        "Citral",
+        "Rose Oxide"
+      ],
+      "price_usd_per_kg": 65
+    },
+    {
+      "id": "MOL-101",
+      "name": "Anisaldehyde",
+      "cas": "104-06-3",
+      "inci": "Anisaldehyde",
+      "category": "Spicy",
+      "mw": 136.15,
+      "description": "Synthetic compound with strong anise and licorice notes. Powerful character with spicy-warm profile. Used to create oriental and spicy fragrances. Excellent blending properties. Heat and light stable.",
+      "organoleptic": "Anise, licorice, spicy, warm, sweet",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 60,
+        "flavoring": 40
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Vanillin",
+        "Eugenol",
+        "Cinnamic Aldehyde",
+        "Coumarin"
+      ],
+      "price_usd_per_kg": 32
+    },
+    {
+      "id": "MOL-102",
+      "name": "Dimethyl Anthranilate",
+      "cas": "131-55-5",
+      "inci": "Dimethyl Anthranilate",
+      "category": "Fruity",
+      "mw": 165.19,
+      "description": "Synthetic compound with grape and fruity character. Creates juicy, fruity effects in perfumes. Excellent for cocktail and fruity fragrances. Soluble in fragrance bases. Good stability.",
+      "organoleptic": "Grape, fruity, juicy, sweet, jammy",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 70,
+        "flavoring": 50
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Isoamyl Acetate",
+        "Ethyl Butyrate",
+        "Benzyl Acetate"
+      ],
+      "price_usd_per_kg": 45
+    },
+    {
+      "id": "MOL-103",
+      "name": "Methyl Anthranilate",
+      "cas": "134-20-3",
+      "inci": "Methyl Anthranilate",
+      "category": "Fruity",
+      "mw": 151.17,
+      "description": "Classic grape compound with intense fruity, jammy character. Essential for fruity fragrances and flavorings. Creates authentic grape notes. Soluble in fragrance bases. Excellent tenacity.",
+      "organoleptic": "Grape, fruity, jammy, candy-like, sweet",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 65,
+        "flavoring": 60
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Isoamyl Acetate",
+        "Ethyl Butyrate",
+        "Citral"
+      ],
+      "price_usd_per_kg": 40
+    },
+    {
+      "id": "MOL-104",
+      "name": "Ethyl Cinnamate",
+      "cas": "103-36-6",
+      "inci": "Ethyl Cinnamate",
+      "category": "Spicy",
+      "mw": 176.21,
+      "description": "Synthetic cinnamon ester with sweet, spicy, warm character. Creates authentic cinnamon notes in fragrances. Excellent for oriental and spicy compositions. Good solubility and stability.",
+      "organoleptic": "Cinnamon, spicy, sweet, warm, creamy",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 65,
+        "flavoring": 50
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Vanillin",
+        "Ethyl Vanillin",
+        "Coumarin",
+        "Cinnamic Aldehyde"
+      ],
+      "price_usd_per_kg": 38
+    },
+    {
+      "id": "MOL-105",
+      "name": "Ethyl 2-Methylbutyrate",
+      "cas": "7452-79-1",
+      "inci": "Ethyl 2-Methylbutyrate",
+      "category": "Fruity",
+      "mw": 130.19,
+      "description": "Fruity ester with apple and tropical fruity character. Creates juicy fruity effects. Excellent for fresh fruity fragrances. Good diffusion and tenacity. Soluble in most bases.",
+      "organoleptic": "Apple, fruity, tropical, fresh, juicy",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 75,
+        "flavoring": 45
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Ethyl Butyrate",
+        "Isoamyl Acetate",
+        "Citral"
+      ],
+      "price_usd_per_kg": 35
+    }
+  ],
+  "total": 10,
+  "part": "Part 4: Woody, Floral, Amber, Musky, Spicy, Fruity (Expanded with descriptions)"
+}
