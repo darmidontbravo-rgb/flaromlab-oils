@@ -83,9 +83,9 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-orange-50">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-amber-600 to-orange-600 text-white sticky top-0 z-50 shadow-lg">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-orange-50 pb-24 lg:pb-0">
+      {/* Header - Desktop Top Tabs */}
+      <header className="bg-gradient-to-r from-amber-600 to-orange-600 text-white sticky top-0 z-50 shadow-lg hidden lg:block">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex items-center gap-3 mb-4">
             <Droplet className="w-8 h-8" />
@@ -93,212 +93,124 @@ export default function App() {
           </div>
           <p className="text-amber-100">Essential oils, formulas & synthetic molecules database</p>
           
-          {/* Tabs */}
-          <div className="flex gap-4 mt-4 border-t border-amber-400 pt-4">
-            <button
-              onClick={() => setActiveTab('oils')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'oils'
-                  ? 'bg-white text-amber-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <Droplet className="w-4 h-4" />
-              Essential Oils (72)
-            </button>
-            <button
-              onClick={() => setActiveTab('formulas')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'formulas'
-                  ? 'bg-white text-orange-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <Beaker className="w-4 h-4" />
-              Formulas (9)
-            </button>
-            <button
-              onClick={() => setActiveTab('molecules')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'molecules'
-                  ? 'bg-white text-purple-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <Atom className="w-4 h-4" />
-              Molecules (150+)
-            </button>
-            <button
-              onClick={() => setActiveTab('builder')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'builder'
-                  ? 'bg-white text-blue-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <Lightbulb className="w-4 h-4" />
-              Formula Builder
-            </button>
-            <button
-              onClick={() => setActiveTab('synthesis')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'synthesis'
-                  ? 'bg-white text-green-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <FlaskConical className="w-4 h-4" />
-              Synthesis
-            </button>
-            <button
-              onClick={() => setActiveTab('analytics')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors ${
-                activeTab === 'analytics'
-                  ? 'bg-white text-indigo-600'
-                  : 'text-amber-100 hover:text-white'
-              }`}
-            >
-              <BarChart3 className="w-4 h-4" />
-              Analytics
-            </button>
+          {/* Desktop Tabs */}
+          <div className="flex gap-4 mt-4 border-t border-amber-400 pt-4 overflow-x-auto">
+            {[
+              { id: 'oils', label: 'Essential Oils (72)', icon: Droplet },
+              { id: 'formulas', label: 'Formulas (9)', icon: Beaker },
+              { id: 'molecules', label: 'Molecules (150+)', icon: Atom },
+              { id: 'builder', label: 'Formula Builder', icon: Lightbulb },
+              { id: 'synthesis', label: 'Synthesis', icon: FlaskConical },
+              { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+            ].map(tab => {
+              const Icon = tab.icon;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-t-lg font-semibold transition-colors whitespace-nowrap ${
+                    activeTab === tab.id
+                      ? 'bg-white text-amber-600'
+                      : 'text-amber-100 hover:text-white'
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  {tab.label}
+                </button>
+              );
+            })}
           </div>
         </div>
       </header>
 
+      {/* Mobile Header - Compact */}
+      <header className="bg-gradient-to-r from-amber-600 to-orange-600 text-white sticky top-0 z-50 shadow-lg lg:hidden">
+        <div className="px-4 py-4">
+          <div className="flex items-center gap-2 mb-2">
+            <Droplet className="w-6 h-6" />
+            <h1 className="text-2xl font-bold">Flaromlab</h1>
+          </div>
+          <p className="text-xs text-amber-100">Essential oils & formulas</p>
+        </div>
+      </header>
+
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="max-w-7xl mx-auto">
         {activeTab === 'oils' ? (
           // OILS TAB
-          <div className="flex flex-col lg:flex-row gap-8">
-            <aside className="w-full lg:w-64 flex-shrink-0">
-              <div className="sticky top-24 z-40 lg:z-30 lg:top-0">
-                <div className="bg-white rounded-xl shadow-lg p-6 lg:mb-0 mb-6">
-                  <div className="mb-6">
-                    <SearchComponent value={searchTerm} onChange={setSearchTerm} />
-                  </div>
-
-                  <div className="mb-6 border-t pt-6">
-                    <h3 className="font-bold text-lg mb-4 text-gray-800">Filters</h3>
-                    <FilterPanel
-                      selectedFamily={selectedFamily}
-                      selectedPriceRange={selectedPriceRange}
-                      selectedSynthesis={selectedSynthesis}
-                      onFamilyChange={setSelectedFamily}
-                      onPriceChange={setSelectedPriceRange}
-                      onSynthesisChange={setSelectedSynthesis}
+          <div className="px-4 py-8">
+            <SearchComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            
+            <div className="grid lg:grid-cols-4 gap-8 mt-8">
+              <FilterPanel
+                selectedFamily={selectedFamily}
+                setSelectedFamily={setSelectedFamily}
+                selectedPriceRange={selectedPriceRange}
+                setSelectedPriceRange={setSelectedPriceRange}
+                selectedSynthesis={selectedSynthesis}
+                setSelectedSynthesis={setSelectedSynthesis}
+              />
+              
+              <div className="lg:col-span-3">
+                {comparisonMode && compareList.length > 0 && (
+                  <ComparisonView oils={compareList} onClose={() => setComparisonMode(false)} />
+                )}
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {filteredOils.map((oil) => (
+                    <OilCard
+                      key={oil.name}
+                      oil={oil}
+                      isSelected={compareList.some(item => item.name === oil.name)}
+                      onToggleCompare={() => toggleCompare(oil)}
                     />
-                  </div>
-
-                  <div className="border-t pt-6">
-                    <button
-                      onClick={() => setComparisonMode(!comparisonMode)}
-                      className={`w-full px-4 py-2 rounded-lg font-semibold flex items-center justify-center gap-2 transition-colors ${
-                        comparisonMode
-                          ? 'bg-blue-600 text-white'
-                          : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-                      }`}
-                    >
-                      <Zap className="w-4 h-4" />
-                      Compare ({compareList.length}/5)
-                    </button>
-                  </div>
+                  ))}
                 </div>
               </div>
-            </aside>
-
-            <div className="flex-1 min-w-0">
-              {comparisonMode && compareList.length > 0 && (
-                <div className="mb-8">
-                  <ComparisonView oils={compareList} />
-                </div>
-              )}
-
-              <div className="mb-6 text-gray-600">
-                <p className="text-lg font-semibold">
-                  Found <span className="text-amber-600">{filteredOils.length}</span> oils
-                  {searchTerm && ` matching "${searchTerm}"`}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {filteredOils.map((oil, index) => (
-                  <OilCard
-                    key={index}
-                    oil={oil}
-                    isComparing={comparisonMode}
-                    isSelected={compareList.some(item => item.name === oil.name)}
-                    onCompareToggle={toggleCompare}
-                  />
-                ))}
-              </div>
-
-              {filteredOils.length === 0 && (
-                <div className="text-center py-16">
-                  <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-600 mb-2">No oils found</h3>
-                  <p className="text-gray-500">Try adjusting your search or filters</p>
-                </div>
-              )}
             </div>
           </div>
         ) : activeTab === 'formulas' ? (
-          // FORMULAS TAB
           <FormulasPage />
         ) : activeTab === 'molecules' ? (
-          // MOLECULES TAB
           <MoleculesPage />
         ) : activeTab === 'builder' ? (
-          // FORMULA BUILDER TAB
           <FormulaBuilder />
         ) : activeTab === 'synthesis' ? (
-          // SYNTHESIS TAB
           <SynthesisPage />
         ) : (
-          // ANALYTICS TAB
           <AnalyticsDashboard />
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white mt-16">
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-bold text-lg mb-3">Database</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">72 Essential Oils</a></li>
-                <li><a href="#" className="hover:text-white transition">9 Formulas</a></li>
-                <li><a href="#" className="hover:text-white transition">96+ Molecules</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-3">Features</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Search</a></li>
-                <li><a href="#" className="hover:text-white transition">Compare</a></li>
-                <li><a href="#" className="hover:text-white transition">Analyze</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-3">Resources</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">API Docs</a></li>
-                <li><a href="#" className="hover:text-white transition">Guide</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-3">About</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition">Flaromlab</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-            <p>&copy; 2026 Flaromlab. All rights reserved.</p>
-          </div>
+      {/* Bottom Tab Bar - Mobile Only */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg lg:hidden z-40">
+        <div className="grid grid-cols-6 gap-0">
+          {[
+            { id: 'oils', label: 'Oils', icon: Droplet },
+            { id: 'formulas', label: 'Formulas', icon: Beaker },
+            { id: 'molecules', label: 'Molecules', icon: Atom },
+            { id: 'builder', label: 'Builder', icon: Lightbulb },
+            { id: 'synthesis', label: 'Synthesis', icon: FlaskConical },
+            { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+          ].map(tab => {
+            const Icon = tab.icon;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex flex-col items-center justify-center py-3 px-2 transition-colors ${
+                  activeTab === tab.id
+                    ? 'text-amber-600 border-t-2 border-amber-600'
+                    : 'text-gray-600 hover:text-amber-600'
+                }`}
+              >
+                <Icon className="w-6 h-6 mb-1" />
+                <span className="text-xs font-semibold text-center truncate">{tab.label}</span>
+              </button>
+            );
+          })}
         </div>
-      </footer>
+      </nav>
     </div>
   );
 }
