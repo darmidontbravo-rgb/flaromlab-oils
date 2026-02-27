@@ -1,0 +1,279 @@
+{
+  "molecules": [
+    {
+      "id": "MOL-116",
+      "name": "Saffron Extract",
+      "cas": "Natural",
+      "inci": "Crocus Sativus",
+      "category": "Spicy",
+      "mw": null,
+      "description": "Precious natural extract with warm, spicy, slightly sweet character. Creates rich, luxurious notes. Used in high-end oriental fragrances. Excellent fixative properties.",
+      "organoleptic": "Spicy, warm, sweet, woody, precious",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 50,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Vanillin",
+        "Benzoin",
+        "Sandalwood"
+      ],
+      "price_usd_per_kg": 800
+    },
+    {
+      "id": "MOL-117",
+      "name": "Musk Xylene",
+      "cas": "6259-76-3",
+      "inci": "Musk Xylene",
+      "category": "Musky",
+      "mw": 250.33,
+      "description": "Polycyclic synthetic musk with clean, soft character. Creates long-lasting effects. Used in fragrances and cosmetics. Good stability and solubility.",
+      "organoleptic": "Clean, soft, musky, warm, subtle",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 60,
+        "cosmetics": 50
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Limited",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Geraniol",
+        "Linalool",
+        "Benzoin"
+      ],
+      "price_usd_per_kg": 85
+    },
+    {
+      "id": "MOL-118",
+      "name": "Triclosan",
+      "cas": "3380-34-5",
+      "inci": "Triclosan",
+      "category": "Antimicrobial",
+      "mw": 289.54,
+      "description": "Antimicrobial compound with clean phenolic character. Used in personal care products. Creates fresh, clean notes. Regulated in some markets.",
+      "organoleptic": "Clean, phenolic, fresh, antimicrobial",
+      "applications": {
+        "perfumery": 5,
+        "fragrance": 30,
+        "cosmetics": 80
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Restricted",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Geraniol",
+        "Limonene"
+      ],
+      "price_usd_per_kg": 120
+    },
+    {
+      "id": "MOL-119",
+      "name": "Cassia Oil",
+      "cas": "Natural",
+      "inci": "Cinnamomum Cassia",
+      "category": "Spicy",
+      "mw": null,
+      "description": "Natural spicy oil with warm cinnamon-like character. Used in fragrances and flavorings. Excellent fixative. Creates authentic spice notes.",
+      "organoleptic": "Cinnamon, spicy, warm, sweet, creamy",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 50,
+        "flavoring": 60
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "24 months",
+      "compatibility": [
+        "Vanillin",
+        "Ethyl Vanillin",
+        "Coumarin"
+      ],
+      "price_usd_per_kg": 45
+    },
+    {
+      "id": "MOL-120",
+      "name": "Cinnamon Leaf Oil",
+      "cas": "Natural",
+      "inci": "Cinnamomum Verum",
+      "category": "Spicy",
+      "mw": null,
+      "description": "Natural spicy oil with sharp, warm character. Used in fragrances and flavorings. Good diffusion. Creates authentic spice notes.",
+      "organoleptic": "Cinnamon, spicy, sharp, warm, peppery",
+      "applications": {
+        "perfumery": 10,
+        "fragrance": 50,
+        "flavoring": 70
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "24 months",
+      "compatibility": [
+        "Eugenol",
+        "Cinnamic Aldehyde",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 35
+    },
+    {
+      "id": "MOL-121",
+      "name": "Jasmine Absolute",
+      "cas": "Natural",
+      "inci": "Jasminum Officinale",
+      "category": "Floral",
+      "mw": null,
+      "description": "Precious natural extract with rich, indolic floral character. Essential for fine fragrances. Creates luxurious floral effects. Excellent fixative.",
+      "organoleptic": "Floral, indolic, rich, tenacious, sensual",
+      "applications": {
+        "perfumery": 25,
+        "fragrance": 70,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Indole",
+        "Benzoin",
+        "Sandalwood",
+        "Vanillin"
+      ],
+      "price_usd_per_kg": 350
+    },
+    {
+      "id": "MOL-122",
+      "name": "Rose Absolute",
+      "cas": "Natural",
+      "inci": "Rosa Damascena",
+      "category": "Floral",
+      "mw": null,
+      "description": "Precious natural extract with complex floral character. Essential for luxury fragrances. Creates authentic rose notes. Excellent fixative.",
+      "organoleptic": "Floral, complex, green, fruity, sensual",
+      "applications": {
+        "perfumery": 30,
+        "fragrance": 80,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Geraniol",
+        "Linalool",
+        "Benzoin",
+        "2-Phenylethyl Acetate"
+      ],
+      "price_usd_per_kg": 400
+    },
+    {
+      "id": "MOL-123",
+      "name": "Oud Oil",
+      "cas": "Natural",
+      "inci": "Aquilaria Agallocha",
+      "category": "Woody",
+      "mw": null,
+      "description": "Precious natural oil with complex woody, animalic character. Creates luxurious oriental notes. Excellent fixative. Very high tenacity.",
+      "organoleptic": "Woody, animalic, complex, warm, precious",
+      "applications": {
+        "perfumery": 20,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "No",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "60 months",
+      "compatibility": [
+        "Sandalwood",
+        "Benzoin",
+        "Vanillin",
+        "Ambroxan"
+      ],
+      "price_usd_per_kg": 5000
+    },
+    {
+      "id": "MOL-124",
+      "name": "Vetivert Oil",
+      "cas": "Natural",
+      "inci": "Vetiveria Zizanioides",
+      "category": "Woody",
+      "mw": null,
+      "description": "Natural woody oil with earthy, smoky character. Creates warm, grounding effects. Excellent fixative. Used in chypre fragrances.",
+      "organoleptic": "Earthy, woody, smoky, warm, rooted",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 60,
+        "cosmetics": 5
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "36 months",
+      "compatibility": [
+        "Sandalwood",
+        "Cedarwood",
+        "Benzoin"
+      ],
+      "price_usd_per_kg": 45
+    },
+    {
+      "id": "MOL-125",
+      "name": "Patchouli Oil",
+      "cas": "Natural",
+      "inci": "Pogostemon Cablin",
+      "category": "Woody",
+      "mw": null,
+      "description": "Earthy, complex natural oil with woody character. Creates warm, grounding effects. Excellent fixative. Essential for chypre fragrances.",
+      "organoleptic": "Earthy, woody, complex, warm, musky",
+      "applications": {
+        "perfumery": 15,
+        "fragrance": 65,
+        "cosmetics": 10
+      },
+      "regulatory": {
+        "fema_gras": "Yes",
+        "eu_approved": "Yes",
+        "prop_65": "No"
+      },
+      "shelf_life": "48 months",
+      "compatibility": [
+        "Benzoin",
+        "Sandalwood",
+        "Vetiver",
+        "Cedarwood"
+      ],
+      "price_usd_per_kg": 48
+    }
+  ],
+  "total": 10,
+  "part": "Part 6: Natural Extracts & Oils (Precious ingredients)"
+}
